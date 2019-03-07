@@ -1,0 +1,221 @@
+// // Styling of header region.
+
+#page .site-header {
+  height: auto;
+  position: relative;
+
+  section {
+    position: relative;
+  }
+
+  // Topbar
+  // =============================================
+  .topbar {
+    @include transition(transform $speed $ease);
+    z-index: $z-overlay + 1;
+    margin-top: -10px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    box-shadow: none;
+  }
+
+  .navigation-wrapper {
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    top: 0;
+
+    .logged-in & {
+      z-index: 1;
+    }
+
+    @media #{$tablet} {
+      padding: 0;
+      top: 23px;
+    }
+    @media #{$normal} {
+      padding: 13px;
+      top: 0;
+    }
+
+    .navigation-inner {
+      background-color: $color-secondary;
+      max-width: 1237px;
+      height: 70px;
+      position: absolute;
+      top: 30px;
+
+      .not-front & {
+        top: 20px;
+      }
+
+      @media #{$tablet} {
+        left: 2px;
+        position: relative;
+        height: 70px;
+        top: 10px;
+
+        .not-front & {
+          top: -15px;
+        }
+      }
+
+      @media #{$wide} {
+        position: relative;
+        height: 55px;
+        top: -20px;
+        left: -3px;
+      }
+
+      .navbar {
+        position: initial;
+
+        @media #{$tablet} {
+          &.navbar-expand-lg {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            z-index: 999;
+            background: $color-secondary;
+            left: 0;
+
+            .main-menu {
+              margin-top: -20px;
+            }
+          }
+        }
+        @media #{$wide}, #{$normal} {
+          position: relative;
+          &.navbar-expand-lg {
+            width: auto;
+           // margin-top: 20px;
+
+           .main-menu {
+            margin-top: 0;
+          }
+          }
+
+          
+        }
+      }
+
+      .pane-search-form {
+        float: right;
+        top: -10px;
+        z-index: 1;
+
+        @media #{$wide}, #{$normal} {
+          top: -22px;
+          width: auto;
+          float: right;
+          right: 0;
+        }
+  
+        .pane-content {
+            margin: 0;
+            height: auto;
+  
+            .form-custom {
+              display: block;
+              padding: 0 20px;
+              @media #{$wide}, #{$normal} {
+                padding: 0;
+              }
+  
+              .form-item-search-block-form {
+                display: inline-block;
+                float: right;
+
+                @media #{$tablet} {
+                  height: 70px;
+                  float: right;
+                // width: auto;
+                }
+
+                @media #{$wide} {
+                  height: 55px;
+                  width: 300px;
+                }
+
+                input.form-autocomplete {
+                  background-image: none;
+                }
+  
+                input.auto-submit {
+                  width: 100%;
+                  margin-right: 0;
+                  background-color: $charcoal;
+                  color: $color-primary;
+                  border: none;
+
+                  ::placeholder {
+                    color: $color-primary;
+                  }
+
+                  @media #{$wide}, #{$normal} {
+                    width: 100%;
+                    height: 100%;
+                    padding-left: 20px;
+                    padding-right: 65px;
+                  }
+                }
+
+                input {
+                  border-radius: inherit;
+                }
+              }
+            }
+          }
+
+          .form-actions {
+
+            @media #{$tablet} {
+              height: 70px;
+              width: auto;
+            }
+
+            .page-user-login & {
+              input[type="submit"] {
+                border-radius: 0;
+              }
+            }
+
+            @media #{$wide} {
+              height: 55px;
+              float: right;
+              width: 80px;
+            }
+            input#edit-submit {
+              background: $color-primary;
+              color: $white;
+              text-transform: uppercase;
+              font-family: $font-family-bold;
+              border-radius: inherit;
+              font-size: $font-size-normal;
+              font-weight: bold;
+              border: none;
+
+              @media #{$wide}, #{$normal} {
+                font-size: 20px;
+                height: 100%;
+                width: 100%;
+              }
+            }
+          }
+        }
+    }
+  }
+}
+
+.not-front #page ul.main-menu {
+  ul.main-menu {
+    display: none;
+  }
+
+  li {
+    .transform-main-menu {
+      display: none;
+    }
+  }
+}

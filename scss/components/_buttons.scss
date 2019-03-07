@@ -1,0 +1,110 @@
+
+// ==========================================================================
+// General
+// ==========================================================================
+.btn {
+  background-color: $grey;
+  color: $charcoal;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+  }
+}
+
+.btn-success:focus,
+.btn-success.focus {
+  box-shadow: 0 0 0 0.2rem $color-primary;
+
+}
+
+.btn-search {
+  background-color: $grey-medium;
+}
+
+.more-link {
+  position: relative;
+  @extend .float-right;
+  padding: 15px 15px 14px 15px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+
+  a::after {
+    top: -18px;
+    right: -47px;
+  }
+}
+
+.more-links .more-link,
+.node-type-ding-library .more-link {
+  margin-top: 0;
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: $color-primary;
+  }
+
+  a:hover,
+  a:active,
+  a:focus {
+    color: $charcoal;
+  }
+}
+
+.pager-last {
+  float: left;
+  a:link {
+     color: transparent;
+     margin-left: -40px;
+  }
+  a::before {
+    content: "\e902";
+    vertical-align: sub;
+    font-family: 'icomoon';
+    color: $charcoal;
+    line-height: 0.5;
+    font-size: 60px;
+    margin-right: 0;
+    float: right;
+  }
+}
+
+.pager-next {
+  float: right;
+  a:link {
+    color: transparent;
+  }
+
+  a::before {
+    content: "\e904";
+    vertical-align: sub;
+    font-family: 'icomoon';
+    color: $charcoal;
+    line-height: 0.5;
+    font-size: 60px;
+    margin-left: -25px;
+    float: left;
+  }
+}
+
+.pager-previous,
+.pager-first {
+  display: none;
+  a:link {
+    display: none;
+  }
+}
+.pager-current {
+  text-decoration: underline;
+  font-family: $font-family-bold;
+}
+
+input[type="submit"] {
+  background-color: $color-primary;
+}

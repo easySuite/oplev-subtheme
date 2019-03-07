@@ -1,0 +1,74 @@
+//
+// Context-specific form styles to overwrite base form styles
+
+.content-wrapper {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"] {
+    background-color: $grey;
+  }
+  input[type=submit] {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .form-item {
+    max-width: 400px;
+  }
+}
+
+.node-ding-event {
+  .webform-client-form {
+    margin-bottom: 30px;
+  }
+}
+
+.form-item-search-block-form {
+  margin: 0;
+  > label {
+    display: none;
+  }
+  input[type="text"].form-autocomplete {
+    background-image: none;
+    &::-ms-clear {
+      display: none;
+    }
+  }
+}
+
+.panels-ipe-form-container {
+  input[type=submit] {
+    width: auto;
+  }
+}
+
+
+.modal-content {
+  input[type=email],
+  input[type=password],
+  input[type=text] {
+    width: auto;
+    background-color: $grey;
+  }
+  input[type=checkbox]+label,
+  input[type=radio]+label {
+    min-height: 28px;
+  }
+  input[type=submit] {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+  .form-type-select {
+    max-width: 400px;
+  }
+  .option-text-aligner {
+    .dependent-options {
+      padding-left: 0;
+    }
+    .form-type-select {
+      min-width: 150px;
+    }
+  }
+  .description {
+    margin-bottom: 10px;
+  }
+}

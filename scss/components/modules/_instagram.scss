@@ -1,0 +1,112 @@
+/* Instagram styles
+   ========================================================================== */
+.pane-instagram-block-instagram-block {
+  margin-top:20px;
+
+  .ding-social-insta-item {
+    min-height: 377px;
+    margin-right: 5px;
+
+    .ding-social-insta-item-image {
+      img {
+        width: 100%;
+      }
+    }
+
+    .ding-social-insta-item-caption {
+      font-family: "SourceSansProRegular";
+      color: $grey-dark;
+      font-size: 14px;
+      line-height: 1.5;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .profile {
+      padding-left: 7px;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 0;
+
+      span.ext {
+        display: none;
+      }
+
+      .profile-photo {
+        display: none;
+      }
+    }
+  }
+
+  .profile-name {
+    font-family: $font-family-bold;
+  }
+
+  .ding-social-insta-slick-controls {
+    li {
+      color: transparent;
+    }
+
+    .insta-prev.slick-arrow,
+    .insta-next.slick-arrow {
+      display: inline-block;
+      margin-top: 10px;
+      width: 50px;
+      height: 30px;
+      border: 1px solid $grey-light;
+      position: relative;
+      margin: 0 10px;
+
+      &[aria-disabled="false"]:before {
+        color: $charcoal;
+        vertical-align: sub;
+        font-size: 20px;
+        font-size: 60px;
+      }
+    }
+
+    .insta-prev.slick-arrow:before {
+      content: "\e902";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: $charcoal;
+      line-height: 0.5;
+      font-size: 60px;
+    }
+
+    .insta-next.slick-arrow:before {
+      content: "\e904";
+      vertical-align: sub;
+      font-family: 'icomoon';
+      color: $charcoal;
+      line-height: 0.5;
+      font-size: 60px;
+      display: inline-block;
+    }
+  }
+}
+
+.field-slideshow-caption span {
+  color: $charcoal;
+}
+
+@media #{$wide}, #{$normal} {
+  .pane-instagram-block-instagram-block {
+    .ding-social-insta-item {
+      min-height: 375px;
+    }
+
+    .ding-social-insta-item-caption {
+      display: block;
+      height: 65px;
+    }
+
+   .ding-social-insta-item-image {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
