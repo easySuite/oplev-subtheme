@@ -1,7 +1,7 @@
-name = 'Kulturoen Subtheme'
-description = Kulture subtheme.
+name = 'Oplev Subtheme'
+description = Oplev subtheme.
 core = 7.x
-theme = Kulturoen Subtheme
+theme = Oplev Subtheme
 
 base theme = culture
 

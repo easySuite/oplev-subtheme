@@ -6701,7 +6701,7 @@ a.text-dark:hover, a.text-dark:focus {
   background-color: #e5e5e5;
   color: #262626; }
   .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus, .more-link:hover, .more-link:active, .more-link:focus {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
 
 .btn-search {
   background-color: #ccc; }
@@ -6884,7 +6884,7 @@ input[type="checkbox"]:checked + label::after {
   left: 0; }
 
 input[type="checkbox"]:checked + label::before {
-  background-color: #a6d6cc; }
+  background-color: #50af9c; }
 
 input[type="radio"] + label::before {
   border-radius: 50%; }
@@ -6900,13 +6900,13 @@ input[type="radio"] + label::after {
   background-color: #ffffff; }
 
 input[type="radio"]:checked + label::after {
-  background-color: #a6d6cc; }
+  background-color: #50af9c; }
 
 .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
 .show > .btn-success.dropdown-toggle {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   color: #262626;
-  border-color: #a6d6cc; }
+  border-color: #50af9c; }
 
 .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
 .show > .btn-success.dropdown-toggle:focus {
@@ -6971,7 +6971,7 @@ ul.main-menu.navbar-nav {
   .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next {
     width: 65px;
     height: 40px;
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     opacity: 1;
     z-index: 1;
     cursor: pointer; }
@@ -7014,7 +7014,7 @@ body {
     color: #494949; }
     html a:hover,
     body a:hover {
-      color: #a6d6cc;
+      color: #50af9c;
       text-decoration: none; }
   html img,
   body img {
@@ -7243,7 +7243,7 @@ body .search-overlay--wrapper {
     left: 50%;
     top: 50%;
     padding: 30px 100px 20px;
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     text-align: center; }
   body .search-overlay--wrapper .icon-spinner {
     position: relative;
@@ -7281,7 +7281,7 @@ body .search-overlay--wrapper {
   height: auto; }
 
 .topbar-menu .menu-item {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   color: #ffffff; }
   .topbar-menu .menu-item:hover, .topbar-menu .menu-item.active {
     background-color: #e8e6e7;
@@ -7300,7 +7300,7 @@ body .search-overlay--wrapper {
   position: absolute;
   top: -70px;
   right: 20px;
-  background: #a6d6cc; }
+  background: #50af9c; }
 
 .navbar-collapse.collapse.show {
   z-index: 2; }
@@ -7346,7 +7346,7 @@ body .search-overlay--wrapper {
       position: relative;
       font-size: 16px; }
       #page .main-menu-wrapper .main-menu a:hover {
-        color: #a6d6cc; }
+        color: #50af9c; }
       #page .main-menu-wrapper .main-menu a.active-trail.active {
         text-decoration: underline; }
   #page .main-menu-wrapper .transform-main-menu {
@@ -7372,7 +7372,7 @@ body .search-overlay--wrapper {
   padding-right: 0;
   top: 0; }
   .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu {
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     position: absolute;
     right: 0;
     height: 70px;
@@ -7406,7 +7406,7 @@ body .search-overlay--wrapper {
         visibility: visible; } }
   @media screen and (min-width: 1200px), screen and (min-width: 992px) {
     .topbar .topbar-inner .secondary-menu-wrapper .transform-sub-menu {
-      background-color: #a6d6cc;
+      background-color: #50af9c;
       height: 97px;
       width: 480px;
       margin-top: -19px;
@@ -7425,10 +7425,10 @@ body .search-overlay--wrapper {
   color: #494949;
   padding-left: 20px; }
   .sub-menu > li a:hover {
-    color: #a6d6cc; }
+    color: #50af9c; }
 
 .sub-menu li:before {
-  color: #a6d6cc; }
+  color: #50af9c; }
 
 .footer .pane-title, .footer h2 {
   color: #262626;
@@ -7478,13 +7478,13 @@ body .search-overlay--wrapper {
     display: none; }
 
 .action-links li {
-  color: #a6d6cc; }
+  color: #50af9c; }
   .action-links li:before {
-    color: #a6d6cc; }
+    color: #50af9c; }
 
 .field-slideshow-controls a.prev,
 .field-slideshow-controls a.next {
-  color: #a6d6cc; }
+  color: #50af9c; }
 
 /*========================================================================== */
 .html #page.ding2-site-template {
@@ -7603,7 +7603,7 @@ a:hover, a:focus {
 .subjects .subject a:visited,
 .news-list .news-label a:visited,
 .super-heading .field-name-field-ding-news-library .field-item a:visited {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
   color: #262626;
@@ -7684,7 +7684,7 @@ a:link {
     text-decoration: none; }
 
 .ticket.button {
-  background: #a6d6cc;
+  background: #50af9c;
   padding: 15px 90px 15px 15px;
   margin-top: 10px; }
   .ticket.button:hover, .ticket.button:active, .ticket.button:focus, .ticket.button:visited {
@@ -7800,10 +7800,10 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   background-color: #e5e5e5;
   color: #262626; }
   .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
 
 .btn-success:focus, .btn-success.focus {
-  box-shadow: 0 0 0 0.2rem #a6d6cc; }
+  box-shadow: 0 0 0 0.2rem #50af9c; }
 
 .btn-search {
   background-color: #ccc; }
@@ -7825,7 +7825,7 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   .node-type-ding-library .more-link:hover,
   .node-type-ding-library .more-link:active,
   .node-type-ding-library .more-link:focus {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
   .more-links .more-link a:hover,
   .more-links .more-link a:active,
   .more-links .more-link a:focus,
@@ -7875,7 +7875,7 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   font-family: "SourceSansProSemibold"; }
 
 input[type="submit"] {
-  background-color: #a6d6cc; }
+  background-color: #50af9c; }
 
 .node-ding-event img {
   display: block;
@@ -8257,7 +8257,7 @@ fieldset.collapsible .fieldset-title::after {
   color: #262626; }
   .button-next:hover,
   .button-previous:hover {
-    color: #a6d6cc; }
+    color: #50af9c; }
 
 #ding-library-front .view .more-link {
   margin-bottom: 20px; }
@@ -8276,8 +8276,8 @@ fieldset.collapsible .fieldset-title::after {
 .page-contact .col-md-8 form input:focus,
 .page-contact .col-md-8 form textarea:focus,
 .page-contact .col-md-8 form select:focus {
-  border-color: #a6d6cc;
-  box-shadow: 0 0 0 0.2rem #a6d6cc; }
+  border-color: #50af9c;
+  box-shadow: 0 0 0 0.2rem #50af9c; }
 
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
@@ -8381,7 +8381,7 @@ fieldset.collapsible .fieldset-title::after {
           left: -11px;
           top: -15px; }
         .panel-pane ul.sub-menu li a.active::before {
-          background-color: #a6d6cc; }
+          background-color: #50af9c; }
 
 .panel-pane .select-list ul.list-items {
   padding: 0;
@@ -8417,7 +8417,7 @@ fieldset.collapsible .fieldset-title::after {
           left: -11px;
           top: -15px; }
         .panel-pane .select-list ul.list-items li .list-item.active::before {
-          background-color: #a6d6cc; }
+          background-color: #50af9c; }
 
 .panel-pane .more-link {
   min-width: getColumn(3);
@@ -8505,7 +8505,7 @@ fieldset.collapsible .fieldset-title::after {
   .page-arrangementer #autocomplete ul li {
     padding-left: 5px; }
     .page-arrangementer #autocomplete ul li:hover {
-      background-color: #a6d6cc; }
+      background-color: #50af9c; }
 
 .page-arrangementer .filters-group {
   margin-bottom: 30px;
@@ -8540,9 +8540,9 @@ fieldset.collapsible .fieldset-title::after {
     .page-arrangementer .filters-group .top_events a:focus,
     .page-arrangementer .filters-group .top_events a:visited,
     .page-arrangementer .filters-group .top_events a:focus-within {
-      background-color: #a6d6cc;
+      background-color: #50af9c;
       color: #262626;
-      border-color: #a6d6cc; }
+      border-color: #50af9c; }
   .page-arrangementer .filters-group .btn-success:not(:disabled):not(.disabled):active:focus,
   .page-arrangementer .filters-group .btn-success:not(:disabled):not(.disabled).active:focus,
   .page-arrangementer .filters-group .show > .btn-success.dropdown-toggle:focus {
@@ -8678,7 +8678,7 @@ fieldset.collapsible .fieldset-title::after {
             .site-header .topbar .main-menu-wrapper ul.main-menu li {
               padding: 0; } }
   .site-header .navigation-wrapper {
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     width: 100%;
     height: 100%; }
     .site-header .navigation-wrapper .navigation-inner {
@@ -8843,7 +8843,7 @@ fieldset.collapsible .fieldset-title::after {
     margin-right: auto;
     width: 90%;
     position: relative;
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     height: 100px; }
     .site-header .navigation-inner::after {
       display: block;
@@ -8920,7 +8920,7 @@ ul.menu, ul.main-menu, ul.menu-second-level, ul.menu-third-level, ul.secondary-m
       font-weight: bolder; }
       .main-menu-wrapper ul.navbar-nav li a:hover {
         text-decoration: none;
-        background-color: #a6d6cc; }
+        background-color: #50af9c; }
     .main-menu-wrapper ul.navbar-nav li > ul {
       display: none; } }
 
@@ -8999,13 +8999,13 @@ ul.main-menu > li, ul.secondary-menu > li {
     display: block;
     color: #494949; }
     .sub-menu-wrapper .pane-content ul.menu li a:hover {
-      color: #a6d6cc; }
+      color: #50af9c; }
 
 .search-overlay--wrapper {
   display: none; }
 
 .pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-day {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   color: #262626; }
 
 .pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-month {
@@ -9017,7 +9017,7 @@ ul.main-menu > li, ul.secondary-menu > li {
   font-weight: bold; }
 
 .ding_nodelist-carousel .ding_nodelist-items .event-time .event-day {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   color: #262626; }
 
 .ding_nodelist-carousel .ding_nodelist-items .event-time .event-date {
@@ -9025,13 +9025,13 @@ ul.main-menu > li, ul.secondary-menu > li {
   font-weight: bold; }
 
 .ding_nodelist-carousel .ding_nodelist-items .article-info .library a {
-  color: #a6d6cc; }
+  color: #50af9c; }
 
 .ding_nodelist-carousel .ding_nodelist-items .article-info .item-price {
   color: #ffffff; }
 
 .ding_nodelist-carousel .ding_nodelist-items .field-name-field-ding-event-category {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   border-radius: 5px;
   min-width: 120px;
   max-width: 160px;
@@ -9043,7 +9043,7 @@ ul.main-menu > li, ul.secondary-menu > li {
   background-color: #ffffff; }
 
 .ding_nodelist-carousel .pagination a.selected {
-  background-color: #a6d6cc;
+  background-color: #50af9c;
   color: #262626; }
   .ding_nodelist-carousel .pagination a.selected span {
     margin-top: -2px; }
@@ -9053,7 +9053,7 @@ ul.main-menu > li, ul.secondary-menu > li {
   display: block; }
 
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .event-arrow-link:after {
-  color: #a6d6cc; }
+  color: #50af9c; }
 
 #kultur_calendar {
   margin-bottom: 40px; }
@@ -9107,7 +9107,7 @@ ul.main-menu > li, ul.secondary-menu > li {
     border-radius: 20px;
     width: 32px;
     height: 32px;
-    background: #a6d6cc; }
+    background: #50af9c; }
     #kultur_calendar .fc-prev-button span,
     #kultur_calendar .fc-next-button span {
       color: #808285; }
@@ -9168,21 +9168,21 @@ ul.main-menu > li, ul.secondary-menu > li {
     #kultur_calendar .fc-day-grid-event.other-info {
       position: absolute; }
       #kultur_calendar .fc-day-grid-event.other-info span {
-        color: #a6d6cc; }
+        color: #50af9c; }
     #kultur_calendar .fc-day-grid-event.kultur-today-event {
-      background-color: #a6d6cc;
+      background-color: #50af9c;
       border: none;
       padding: 0;
       border-radius: 0; }
       .td #kultur_calendar .fc-day-grid-event.kultur-today-event {
-        background-color: #a6d6cc; }
+        background-color: #50af9c; }
       #kultur_calendar .fc-day-grid-event.kultur-today-event span {
         color: #262626;
         border: none; }
       #kultur_calendar .fc-day-grid-event.kultur-today-event.other-info span {
         color: #262626; }
   #kultur_calendar .fc-today {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
   #kultur_calendar .fc-day-number {
     z-index: 0; }
   #kultur_calendar .fc-day {
@@ -9196,7 +9196,7 @@ ul.main-menu > li, ul.secondary-menu > li {
     padding: 15px; }
     #kultur_calendar-day .kultur_calendar-title a span.fc-title,
     #kultur_calendar-day .kultur_calendar-body a span.fc-title {
-      color: #a6d6cc; }
+      color: #50af9c; }
   #kultur_calendar-day .day-number {
     display: none; }
   #kultur_calendar-day .kultur_calendar-title, #kultur_calendar-day .title a {
@@ -9214,10 +9214,10 @@ ul.main-menu > li, ul.secondary-menu > li {
   #kultur_calendar-day .event {
     width: 100%; }
     #kultur_calendar-day .event a {
-      color: #a6d6cc;
+      color: #50af9c;
       font-weight: bold; }
   #kultur_calendar-day .fc-today {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
 
 .pane-ding-event-calendar-ding-event-calendar .event-items {
   height: 100%; }
@@ -9248,7 +9248,7 @@ ul.main-menu > li, ul.secondary-menu > li {
       .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-location a {
         color: #808285; }
         .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-location a:hover {
-          color: #a6d6cc; }
+          color: #50af9c; }
     .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-time,
     .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-category {
       display: inline-block; }
@@ -9258,7 +9258,7 @@ ul.main-menu > li, ul.secondary-menu > li {
         color: #262626; }
       .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-time a:hover,
       .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-category a:hover {
-        color: #a6d6cc; }
+        color: #50af9c; }
     .pane-ding-event-calendar-ding-event-calendar .event-items .info-event a, .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-time {
       font-size: 12px; }
     .pane-ding-event-calendar-ding-event-calendar .event-items .info-event .event-time {
@@ -9270,14 +9270,14 @@ table#calendar {
 
 .slick-prev:before,
 .slick-next:before {
-  color: #a6d6cc;
+  color: #50af9c;
   font-size: 30px; }
 
 .slick-next {
   right: 10px; }
 
 #eventsCalendar #calendar tr td.calendar-day.has-events.selected {
-  background-color: #a6d6cc; }
+  background-color: #50af9c; }
   #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
     color: #262626; }
 
@@ -9463,7 +9463,7 @@ table#calendar {
   .ding_nodelist .pagination a.selected .field-item.even,
   .ding_nodelist .field-name-field-ding-event-category .field-item.even,
   .ding_nodelist .field-name-field-ding-news-category .field-item.even {
-    background-color: #a6d6cc;
+    background-color: #50af9c;
     padding: 3px 5px;
     border-radius: 4px; }
 
@@ -9506,10 +9506,10 @@ table#calendar {
     background-color: #ffffff;
     color: #262626; }
   .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
-    background: #a6d6cc; }
+    background: #50af9c; }
 
 .ding_nodelist.ding_nodelist-carousel .slick-arrow {
-  color: #a6d6cc;
+  color: #50af9c;
   z-index: 1; }
 
 .ding_nodelist .pagination {
@@ -9534,10 +9534,10 @@ table#calendar {
     font-size: 9px; }
 
 .ding_nodelist .field-name-field-ding-news-library .field-item a {
-  color: #a6d6cc; }
+  color: #50af9c; }
 
 .ding_nodelist .library a {
-  color: #a6d6cc;
+  color: #50af9c;
   text-decoration: underline;
   font-family: "SourceSansPro-Bold";
   font-size: 18px; }
@@ -9885,7 +9885,7 @@ table#calendar {
       color: #ffffff;
       font-family: "SourceSansProSemibold"; }
   #kultur-calendar table .fc-today.fc-state-highlight {
-    background-color: #a6d6cc; }
+    background-color: #50af9c; }
     #kultur-calendar table .fc-today.fc-state-highlight .fc-day-number {
       background-color: #ffffff;
       color: #262626;
@@ -9950,7 +9950,7 @@ table#calendar {
       position: absolute;
       right: 7px;
       top: 7px;
-      background: #a6d6cc;
+      background: #50af9c;
       width: 25px;
       height: 25px;
       border-radius: 5px;
@@ -9978,7 +9978,7 @@ table#calendar {
       #kultur_calendar-day .kultur_calendar-body .footer-inner .event a,
       #kultur_calendar-day .kultur_calendar-body .kultur_calendar-title > a .event a,
       #kultur_calendar-day .kultur_calendar-body > a .event a {
-        color: #a6d6cc;
+        color: #50af9c;
         font-family: "Source Sans Pro", sans-serif;
         padding-left: 30px;
         display: inline-block; }
@@ -9997,7 +9997,7 @@ table#calendar {
   font-size: 30px;
   position: relative;
   top: -11px;
-  background: #a6d6cc;
+  background: #50af9c;
   border-radius: 20px;
   content: "\e900";
   font-family: 'icomoon';
@@ -10040,7 +10040,7 @@ table#calendar {
     text-decoration: none; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row td.calendar-day.has-events.selected {
-  background-color: #a6d6cc; }
+  background-color: #50af9c; }
   .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row td.calendar-day.has-events.selected a {
     color: #262626; }
 
@@ -10088,7 +10088,7 @@ table#calendar {
     max-width: 60%;
     margin-right: 5px; }
     .pane-ding-event-calendar-ding-event-calendar #eventList .event-items .event-title a {
-      color: #a6d6cc;
+      color: #50af9c;
       text-decoration: none;
       font-family: "SourceSansPro-Bold";
       font-size: 18px; }
@@ -10216,10 +10216,10 @@ table#calendar {
                 width: 100%;
                 margin-right: 0;
                 background-color: #262626;
-                color: #a6d6cc;
+                color: #50af9c;
                 border: none; }
                 #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .pane-content .form-custom .form-item-search-block-form input.auto-submit ::placeholder {
-                  color: #a6d6cc; }
+                  color: #50af9c; }
                 @media screen and (min-width: 1200px), screen and (min-width: 992px) {
                   #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .pane-content .form-custom .form-item-search-block-form input.auto-submit {
                     width: 100%;
@@ -10240,7 +10240,7 @@ table#calendar {
             float: right;
             width: 80px; } }
         #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .form-actions input#edit-submit {
-          background: #a6d6cc;
+          background: #50af9c;
           color: #ffffff;
           text-transform: uppercase;
           font-family: "SourceSansProSemibold";
@@ -10336,7 +10336,7 @@ table#calendar {
     right: 80px;
     width: 70px;
     height: 50px;
-    background: #a6d6cc;
+    background: #50af9c;
     border: none;
     color: transparent;
     outline: none; }
@@ -10364,7 +10364,7 @@ table#calendar {
     left: 80px;
     width: 70px;
     height: 50px;
-    background: #a6d6cc;
+    background: #50af9c;
     border: none;
     outline: none; }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
