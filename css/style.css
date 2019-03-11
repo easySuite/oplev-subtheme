@@ -7673,7 +7673,7 @@ html,
 body {
   font-family: "Source Sans Pro", sans-serif;
   height: 100%;
-  background-image: url(../background.jpg);
+  background-color: #ccc;
   background-size: cover;
   background-attachment: fixed; }
 
