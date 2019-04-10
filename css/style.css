@@ -7810,10 +7810,8 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   font-weight: normal; }
 
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
-  background-color: #e5e5e5;
+  background-color: #50af9c;
   color: #262626; }
-  .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus {
-    background-color: #50af9c; }
 
 .btn-success:focus, .btn-success.focus {
   box-shadow: 0 0 0 0.2rem #50af9c; }
@@ -7831,17 +7829,17 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
     top: -18px;
     right: -47px; }
 
-.more-links .more-link,
+.more-links,
 .node-type-ding-library .more-link {
   margin-top: 0; }
-  .more-links .more-link:hover, .more-links .more-link:active, .more-links .more-link:focus,
+  .more-links:hover, .more-links:active, .more-links:focus,
   .node-type-ding-library .more-link:hover,
   .node-type-ding-library .more-link:active,
   .node-type-ding-library .more-link:focus {
     background-color: #50af9c; }
-  .more-links .more-link a:hover,
-  .more-links .more-link a:active,
-  .more-links .more-link a:focus,
+  .more-links a:hover,
+  .more-links a:active,
+  .more-links a:focus,
   .node-type-ding-library .more-link a:hover,
   .node-type-ding-library .more-link a:active,
   .node-type-ding-library .more-link a:focus {
