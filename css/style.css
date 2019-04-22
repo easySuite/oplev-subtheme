@@ -6698,10 +6698,13 @@ a.text-dark:hover, a.text-dark:focus {
   font-style: normal; }
 
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit, .more-link {
-  background-color: #e5e5e5;
+  background-color: #50af9c;
   color: #262626; }
   .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus, .more-link:hover, .more-link:active, .more-link:focus {
     background-color: #50af9c; }
+
+.card .button.btn, .card .button.more-link, .card .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .card .button.slick-arrow.slick-prev, .card .field-type-culture-frontend-lists-control .slick-slider .button.slick-arrow.slick-next, .field-type-culture-frontend-lists-control .slick-slider .card .button.slick-arrow.slick-next, .card .page-contact .col-md-8 form input.button#edit-submit, .page-contact .col-md-8 form .card input.button#edit-submit {
+  background-color: #50af9c; }
 
 .btn-search {
   background-color: #ccc; }
@@ -6857,7 +6860,7 @@ input[type="radio"] {
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     display: block;
-    padding: 7px 0 1px 42px;
+    padding: 1px 0 1px 42px;
     position: relative; }
     input[type="checkbox"] + label::before,
     input[type="radio"] + label::before {
@@ -6865,8 +6868,8 @@ input[type="radio"] {
       position: absolute;
       left: 0;
       top: 0;
-      width: 28px;
-      height: 28px;
+      width: 25px;
+      height: 25px;
       margin: 0 10px 5px 0;
       background-color: #e5e5e5; }
 
@@ -6934,7 +6937,7 @@ input[type=checkbox]:checked + label {
     top: 0; }
 
 input[type="checkbox"]:checked + label::after {
-  left: -11px;
+  left: -15px;
   top: -15px; }
 
 ul.main-menu.navbar-nav {
@@ -7176,6 +7179,16 @@ table td {
 .pane-facebook-embeds {
   margin: 20px 0; }
 
+.page-node .node ul li {
+  list-style: initial; }
+
+.page-node .node img {
+  margin-bottom: 20px; }
+
+.page-node .node .field-name-field-ding-page-lead .field-item {
+  font-weight: bold;
+  padding-bottom: 20px; }
+
 .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
 input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
@@ -7329,7 +7342,7 @@ body .search-overlay--wrapper {
         top: 0;
         margin-left: 5px;
         position: relative;
-        padding: 10px 0 10px 30px; } }
+        padding: 15px 0 10px 30px; } }
     #page .main-menu-wrapper .main-menu li {
       display: block;
       width: 100%; }
@@ -7501,7 +7514,7 @@ body .search-overlay--wrapper {
       @media screen and (min-width: 1200px), screen and (min-width: 992px) {
         .html #page.ding2-site-template .logo img {
           left: -65px;
-          top: 10px; } }
+          top: -5px; } }
   .html #page.ding2-site-template .topbar {
     height: 100px;
     z-index: auto; }
@@ -8052,7 +8065,8 @@ fieldset.collapsible .fieldset-title::after {
     top: 0;
     right: 0; }
   .node-ding-library.node-teaser .field-name-field-ding-library-title-image img {
-    float: right; }
+    position: absolute;
+    right: 0; }
   .node-ding-library.node-teaser a.opening-hours-toggle {
     position: static;
     width: getColumn(9);
@@ -8101,9 +8115,9 @@ fieldset.collapsible .fieldset-title::after {
       .node-ding-library.node-teaser .field-name-field-ding-library-fax-number,
       .node-ding-library.node-teaser .field-name-field-ding-library-mail,
       .node-ding-library.node-teaser .field-name-field-ding-library-links {
-        flex: 0 0 50%;
-        max-width: 50%;
-        margin-right: 30px; } }
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-right: 0px; } }
     .node-ding-library.node-teaser .field-name-field-ding-library-phone-number .field-label,
     .node-ding-library.node-teaser .field-name-field-ding-library-fax-number .field-label,
     .node-ding-library.node-teaser .field-name-field-ding-library-mail .field-label,
@@ -8144,6 +8158,8 @@ fieldset.collapsible .fieldset-title::after {
 
 .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead {
   padding: 15px 0; }
+  .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead .field-item.even {
+    font-weight: bold; }
 
 .node-type-ding-library .pane-weekly-opening-hours {
   flex: 0 0 100%;
@@ -8165,19 +8181,6 @@ fieldset.collapsible .fieldset-title::after {
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-top: none; }
-
-.node-type-ding-library .opening-hours-table {
-  width: 100%; }
-  .node-type-ding-library .opening-hours-table thead {
-    border: none; }
-  .node-type-ding-library .opening-hours-table tbody .odd {
-    background-color: #e5e5e5; }
-    .node-type-ding-library .opening-hours-table tbody .odd td {
-      padding-left: 10px; }
-  .node-type-ding-library .opening-hours-table tbody .even {
-    background-color: #f1f2f2; }
-    .node-type-ding-library .opening-hours-table tbody .even td {
-      padding-left: 10px; }
 
 .node-type-ding-library .ding-library-address .pane-title,
 .node-type-ding-library .ding-library-contact .pane-title {
@@ -8220,6 +8223,23 @@ fieldset.collapsible .fieldset-title::after {
   .node-type-ding-library .ding-library-contact .library-contact-fax-label {
     width: 100px;
     float: left; }
+
+.opening-hours-table {
+  width: 100%; }
+  .opening-hours-table thead {
+    border: none; }
+  .opening-hours-table tbody tr.odd {
+    background-color: #e5e5e5; }
+    .opening-hours-table tbody tr.odd td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.odd td div span {
+        margin-left: 10px; }
+  .opening-hours-table tbody tr.even {
+    background-color: #f1f2f2; }
+    .opening-hours-table tbody tr.even td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.even td div span {
+        margin-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }
@@ -8278,6 +8298,79 @@ fieldset.collapsible .fieldset-title::after {
 .page-contact .col-md-8 form select:focus {
   border-color: #50af9c;
   box-shadow: 0 0 0 0.2rem #50af9c; }
+
+.page-node .node ul li {
+  list-style: initial; }
+
+.page-node .node img {
+  margin-bottom: 20px; }
+
+.page-node .node .field-name-field-ding-page-lead .field-item {
+  font-weight: bold;
+  padding-bottom: 20px; }
+
+.page-taxonomy .frontpage-layout {
+  margin-top: 25px; }
+
+.page-taxonomy .pane-all-opening-hours table td {
+  padding-left: 10px; }
+  .page-taxonomy .pane-all-opening-hours table td span {
+    padding-left: 10px; }
+
+.page-node .node-ding-page a {
+  color: #50af9c; }
+
+article.node.node-ding-page .field-name-field-ding-page-tags {
+  float: left;
+  display: block;
+  margin-right: 3.78378%;
+  width: 74.05405%;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 30px; }
+  article.node.node-ding-page .field-name-field-ding-page-tags .field-items .field-item {
+    display: inline;
+    margin-right: 15px; }
+
+.page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments h2 {
+  font-size: 30px;
+  line-height: 44px;
+  color: #262626;
+  margin-bottom: 0px; }
+
+.page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list {
+  padding-left: 0; }
+  .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item {
+    position: relative;
+    display: block;
+    padding: 45px 45px 45px 0;
+    margin-bottom: 20px; }
+    .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name {
+      position: absolute;
+      bottom: -20px;
+      padding-left: 10px; }
+      .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name a {
+        font-size: 18px;
+        line-height: 24px;
+        color: #262626; }
+    .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-position {
+      position: absolute;
+      top: 0;
+      font-size: 30px;
+      line-height: 34px;
+      float: left;
+      width: 100%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 10px 10px 5px;
+      background-color: #ccc;
+      color: #ffffff; }
+
+.card .field-type-taxonomy-term-reference {
+  text-transform: uppercase;
+  color: #262626;
+  font-weight: bold; }
 
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
@@ -8356,15 +8449,15 @@ fieldset.collapsible .fieldset-title::after {
     width: 100%; }
     .panel-pane ul.sub-menu li a {
       display: block;
-      padding: 7px 0 1px 42px;
+      padding: 1px 0 1px 42px;
       position: relative; }
       .panel-pane ul.sub-menu li a::before {
         content: '';
         position: absolute;
         left: 0;
         top: 0;
-        width: 28px;
-        height: 28px;
+        width: 25px;
+        height: 25px;
         margin: 0 10px 5px 0;
         border-radius: 5px;
         background-color: #e5e5e5; }
@@ -8378,7 +8471,7 @@ fieldset.collapsible .fieldset-title::after {
           position: absolute;
           top: 0; }
         .panel-pane ul.sub-menu li a.active::after {
-          left: -11px;
+          left: -15px;
           top: -15px; }
         .panel-pane ul.sub-menu li a.active::before {
           background-color: #50af9c; }
@@ -9038,7 +9131,7 @@ ul.main-menu > li, ul.secondary-menu > li {
   padding-left: 5px; }
 
 .ding_nodelist-carousel .pagination a {
-  line-height: 1.8;
+  line-height: 2;
   color: #262626;
   background-color: #ffffff; }
 
@@ -9054,6 +9147,14 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .event-arrow-link:after {
   color: #50af9c; }
+
+.ding_nodelist-taxonomy .more {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px; }
+
+.ding_nodelist .more-links .more-link {
+  background-color: #50af9c; }
 
 #kultur_calendar {
   margin-bottom: 40px; }
@@ -9219,6 +9320,43 @@ ul.main-menu > li, ul.secondary-menu > li {
   #kultur_calendar-day .fc-today {
     background-color: #50af9c; }
 
+.pane-ding-event-calendar-ding-event-calendar .slick-prev:before, .pane-ding-event-calendar-ding-event-calendar .slick-next:before {
+  color: #262626;
+  font-size: 30px;
+  position: relative;
+  top: -11px;
+  background: #50af9c;
+  border-radius: 20px;
+  content: "\e904";
+  font-family: 'icomoon';
+  font-weight: 800; }
+
+.pane-ding-event-calendar-ding-event-calendar .slick-prev:before {
+  transform: rotate(180deg);
+  display: inline-block; }
+
+.pane-ding-event-calendar-ding-event-calendar .slick-next:before {
+  display: inline-block; }
+
+.pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar tr td.calendar-day.has-events.selected {
+  background-color: #50af9c; }
+  .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
+    color: #262626; }
+
+.pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar td.calendar-day.has-events.selected {
+  background-color: #50af9c; }
+  .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar td.calendar-day.has-events.selected .day-number {
+    position: relative; }
+  .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar td.calendar-day.has-events.selected a {
+    color: #262626; }
+    .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar td.calendar-day.has-events.selected a.progress-disabled {
+      opacity: 0.2;
+      color: #262626; }
+  .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar td.calendar-day.has-events.selected div.ajax-progress {
+    position: absolute;
+    left: calc(50% - 8px);
+    top: 2px; }
+
 .pane-ding-event-calendar-ding-event-calendar .event-items {
   height: 100%; }
   .pane-ding-event-calendar-ding-event-calendar .event-items .event-title {
@@ -9276,13 +9414,13 @@ table#calendar {
 .slick-next {
   right: 10px; }
 
-#eventsCalendar #calendar tr td.calendar-day.has-events.selected {
-  background-color: #50af9c; }
-  #eventsCalendar #calendar tr td.calendar-day.has-events.selected a {
-    color: #262626; }
-
 .pane-ding-event-calendar-ding-event-calendar .more-link {
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  background-color: transparent; }
+  .pane-ding-event-calendar-ding-event-calendar .more-link a {
+    background-color: #50af9c;
+    padding: 15px;
+    border-radius: 5px; }
 
 .library-list .card {
   border: none; }
@@ -9309,22 +9447,6 @@ table#calendar {
 
 .view-display-id-culture_events_day {
   margin-bottom: 30px; }
-
-.page-libraries .node-ding-library.node-teaser .field-type-email,
-.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-links {
-  float: left;
-  position: absolute; }
-
-.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-phone-number {
-  position: absolute;
-  bottom: 40px;
-  float: left; }
-
-.page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-links {
-  bottom: 0; }
-
-.page-libraries .node-ding-library.node-teaser .field-type-email {
-  bottom: 20px; }
 
 .page-libraries .node-ding-library.node-teaser .views-exposed-widgets input.form-item-title {
   border-radius: inherit; }
@@ -9468,8 +9590,7 @@ table#calendar {
     border-radius: 4px; }
 
 .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
-  color: #262626;
-  line-height: 1.8; }
+  color: #262626; }
 
 .ding_nodelist.ding_nodelist-carousel .field-name-field-ding-event-category,
 .ding_nodelist.ding_nodelist-carousel .field-name-field-ding-news-category {
@@ -9992,25 +10113,6 @@ table#calendar {
 
 /* Event calendar styles
    ========================================================================== */
-.pane-ding-event-calendar-ding-event-calendar .slick-prev:before, .pane-ding-event-calendar-ding-event-calendar .slick-next:before {
-  color: #262626;
-  font-size: 30px;
-  position: relative;
-  top: -11px;
-  background: #50af9c;
-  border-radius: 20px;
-  content: "\e900";
-  font-family: 'icomoon';
-  font-weight: 800; }
-
-.pane-ding-event-calendar-ding-event-calendar .slick-prev:before {
-  transform: rotate(90deg);
-  display: inline-block; }
-
-.pane-ding-event-calendar-ding-event-calendar .slick-next:before {
-  transform: rotate(-90deg);
-  display: inline-block; }
-
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar .navi-heading h2 {
   margin-bottom: 0; }
 
@@ -10038,11 +10140,6 @@ table#calendar {
   background-color: #999998; }
   .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .has-events a {
     text-decoration: none; }
-
-.pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row td.calendar-day.has-events.selected {
-  background-color: #50af9c; }
-  .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row td.calendar-day.has-events.selected a {
-    color: #262626; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventList {
   border: none; }
@@ -10099,7 +10196,6 @@ table#calendar {
     display: block;
     float: none !important;
     font-family: "SourceSansProSemibold";
-    background-color: transparent;
     color: #262626;
     text-align: right; }
     .pane-ding-event-calendar-ding-event-calendar #eventList .more-link:hover {

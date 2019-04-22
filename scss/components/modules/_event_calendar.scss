@@ -2,29 +2,7 @@
    ========================================================================== */
 
 .pane-ding-event-calendar-ding-event-calendar {
-  .slick-prev:before, .slick-next:before {
-    color: $charcoal;
-    font-size: 30px;
-    position: relative;
-    top: -11px;
-    background: $color-text-link;
-    border-radius: 20px;
-    content: "\e900";
-    font-family: 'icomoon';
-    font-weight: 800;
-  }
-
-  .slick-prev:before {
-    transform: rotate(90deg);
-    display: inline-block;
-  }
-
-  .slick-next:before {
-    transform: rotate(-90deg);
-    display: inline-block;
-  }
-
-  #eventsCalendar .navi-heading h2 {
+   #eventsCalendar .navi-heading h2 {
     margin-bottom: 0;
   }
 
@@ -61,14 +39,6 @@
 
           a {
             text-decoration: none;
-          }
-        }
-
-        td.calendar-day.has-events.selected {
-         background-color: $color-primary;
-
-          a {
-           color: $charcoal;
           }
         }
       }
@@ -157,7 +127,6 @@
       display: block;
       float: none !important;
       font-family: $font-family-bold;
-      background-color: transparent;
       color: $charcoal;
       text-align: right;
 
