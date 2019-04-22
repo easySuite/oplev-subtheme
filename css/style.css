@@ -7810,8 +7810,10 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   font-weight: normal; }
 
 .btn, .more-link, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next, .page-contact .col-md-8 form input#edit-submit {
-  background-color: #50af9c;
+  background-color: #e5e5e5;
   color: #262626; }
+  .btn:hover, .more-link:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:hover, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:hover, .page-contact .col-md-8 form input#edit-submit:hover, .btn:active, .more-link:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:active, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:active, .page-contact .col-md-8 form input#edit-submit:active, .btn:focus, .more-link:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-prev:focus, .field-type-culture-frontend-lists-control .slick-slider .slick-arrow.slick-next:focus, .page-contact .col-md-8 form input#edit-submit:focus {
+    background-color: #50af9c; }
 
 .btn-success:focus, .btn-success.focus {
   box-shadow: 0 0 0 0.2rem #50af9c; }
@@ -7829,17 +7831,17 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
     top: -18px;
     right: -47px; }
 
-.more-links,
+.more-links .more-link,
 .node-type-ding-library .more-link {
   margin-top: 0; }
-  .more-links:hover, .more-links:active, .more-links:focus,
+  .more-links .more-link:hover, .more-links .more-link:active, .more-links .more-link:focus,
   .node-type-ding-library .more-link:hover,
   .node-type-ding-library .more-link:active,
   .node-type-ding-library .more-link:focus {
     background-color: #50af9c; }
-  .more-links a:hover,
-  .more-links a:active,
-  .more-links a:focus,
+  .more-links .more-link a:hover,
+  .more-links .more-link a:active,
+  .more-links .more-link a:focus,
   .node-type-ding-library .more-link a:hover,
   .node-type-ding-library .more-link a:active,
   .node-type-ding-library .more-link a:focus {
@@ -8063,7 +8065,8 @@ fieldset.collapsible .fieldset-title::after {
     top: 0;
     right: 0; }
   .node-ding-library.node-teaser .field-name-field-ding-library-title-image img {
-    float: right; }
+    position: absolute;
+    right: 0; }
   .node-ding-library.node-teaser a.opening-hours-toggle {
     position: static;
     width: getColumn(9);
@@ -8155,6 +8158,8 @@ fieldset.collapsible .fieldset-title::after {
 
 .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead {
   padding: 15px 0; }
+  .node-type-ding-library .pane-node-field-ding-library-lead .field-name-field-ding-library-lead .field-item.even {
+    font-weight: bold; }
 
 .node-type-ding-library .pane-weekly-opening-hours {
   flex: 0 0 100%;
@@ -8176,19 +8181,6 @@ fieldset.collapsible .fieldset-title::after {
   margin-bottom: 25px;
   padding-bottom: 25px;
   border-top: none; }
-
-.node-type-ding-library .opening-hours-table {
-  width: 100%; }
-  .node-type-ding-library .opening-hours-table thead {
-    border: none; }
-  .node-type-ding-library .opening-hours-table tbody .odd {
-    background-color: #e5e5e5; }
-    .node-type-ding-library .opening-hours-table tbody .odd td {
-      padding-left: 10px; }
-  .node-type-ding-library .opening-hours-table tbody .even {
-    background-color: #f1f2f2; }
-    .node-type-ding-library .opening-hours-table tbody .even td {
-      padding-left: 10px; }
 
 .node-type-ding-library .ding-library-address .pane-title,
 .node-type-ding-library .ding-library-contact .pane-title {
@@ -8231,6 +8223,23 @@ fieldset.collapsible .fieldset-title::after {
   .node-type-ding-library .ding-library-contact .library-contact-fax-label {
     width: 100px;
     float: left; }
+
+.opening-hours-table {
+  width: 100%; }
+  .opening-hours-table thead {
+    border: none; }
+  .opening-hours-table tbody tr.odd {
+    background-color: #e5e5e5; }
+    .opening-hours-table tbody tr.odd td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.odd td div span {
+        margin-left: 10px; }
+  .opening-hours-table tbody tr.even {
+    background-color: #f1f2f2; }
+    .opening-hours-table tbody tr.even td {
+      padding-left: 10px; }
+      .opening-hours-table tbody tr.even td div span {
+        margin-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }
@@ -8311,7 +8320,7 @@ fieldset.collapsible .fieldset-title::after {
 .page-node .node-ding-page a {
   color: #50af9c; }
 
-.node-ding-page.node-full .field-name-field-ding-page-tags {
+article.node.node-ding-page .field-name-field-ding-page-tags {
   float: left;
   display: block;
   margin-right: 3.78378%;
@@ -8320,7 +8329,7 @@ fieldset.collapsible .fieldset-title::after {
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
   margin-bottom: 30px; }
-  .node-ding-page.node-full .field-name-field-ding-page-tags .field-items .field-item {
+  article.node.node-ding-page .field-name-field-ding-page-tags .field-items .field-item {
     display: inline;
     margin-right: 15px; }
 
@@ -8328,18 +8337,19 @@ fieldset.collapsible .fieldset-title::after {
   font-size: 30px;
   line-height: 44px;
   color: #262626;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; }
 
 .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list {
   padding-left: 0; }
   .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item {
     position: relative;
     display: block;
-    padding: 40px 40px 40px 0;
+    padding: 45px 45px 45px 0;
     margin-bottom: 20px; }
     .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name {
       position: absolute;
-      bottom: 0; }
+      bottom: -20px;
+      padding-left: 10px; }
       .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-name a {
         font-size: 18px;
         line-height: 24px;
@@ -8347,13 +8357,13 @@ fieldset.collapsible .fieldset-title::after {
     .page-bibliotek-biblioteket-personale .pane-ding-staff-ding-staff-library-departments ul.staff-list .staff-list-item .staff-position {
       position: absolute;
       top: 0;
-      font-size: 40px;
-      line-height: 44px;
+      font-size: 30px;
+      line-height: 34px;
       float: left;
       width: 100%;
       margin-top: 20px;
       margin-bottom: 20px;
-      padding: 15px 15px 10px;
+      padding: 10px 10px 5px;
       background-color: #ccc;
       color: #ffffff; }
 
