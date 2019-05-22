@@ -1,6 +1,6 @@
 // =============================================================================
 //
-// Oplev stylesheet combiner
+// Culture stylesheet combiner
 //
 // =============================================================================
 //
@@ -20,14 +20,14 @@
 
 //Custom style
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/event";
-@import "../../../../../profiles/ding2/themes/culture/scss/components/node/library";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/campaign";
+@import "../../../../../profiles/ding2/themes/culture/scss/components/node/library";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/page";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/node/news";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_search.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_footer.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/_header.scss";
-@import "../../../../../profiles/ding2/themes/culture/scss/components/modules/_ding_nodelist.scss";
+@import "../../../../../profiles/ding2/themes/culture/scss/components/modules/ding_nodelist.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/modules/_kultur_calendar.scss";
 @import "../../../../../profiles/ding2/themes/culture/scss/components/modules/_ding_event_calendar.scss";
 @import "components/_library";

@@ -3,7 +3,7 @@
 // General
 // ==========================================================================
 .btn {
-  background-color: $grey;
+  background-color: $color-primary;
   color: $charcoal;
 
   &:hover,
@@ -71,6 +71,7 @@
     line-height: 0.5;
     font-size: 60px;
     margin-right: 0;
+    margin-top: -11px;
     float: right;
   }
 }
@@ -89,6 +90,7 @@
     line-height: 0.5;
     font-size: 60px;
     margin-left: -25px;
+    margin-top: -11px;
     float: left;
   }
 }
