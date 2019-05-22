@@ -32,7 +32,7 @@
 html, body {
   font-family: $font-family;
   height: 100%;
-  background-color: #ccc;
+  background-image: url(../background.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -57,7 +57,7 @@ a:link {
   }
 }
 .field-group-format.group-left {
-  margin-bottom: 20px;
+  padding-top: 25px;
 }
 
 #page .site-header .topbar-inner .site-name-container.logo-container  {
@@ -100,11 +100,6 @@ html #page .content-wrapper .content-inner .row:last-child {
     bottom: 15px;
     right: 15px;
   }
-}
-
-.field-slideshow.field-slideshow-processed {
-  width: auto!important;
-  height: auto!important;
 }
 
 .share-buttons {

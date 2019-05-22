@@ -1,193 +1,193 @@
 .library-list .card {
-   border: none;
+  border: none;
 }
 
 .node-ding-library.node-teaser .card-body {
-  .libraries {
-    &:after{
-      content: ".";
-      visibility: hidden;
-      display: block;
-      height: 0;
-      clear: both;
-    }
+ .libraries {
+   &:after{
+     content: ".";
+     visibility: hidden;
+     display: block;
+     height: 0;
+     clear: both;
+   }
 
-    .ding-library-left {
-      float: left;
-      margin-right: 25px;
-    }
+   .ding-library-left {
+     float: left;
+     margin-right: 25px;
+   }
 
-    .ding-library-right {
-      float: left;
-      clear: none;
-      margin-bottom: 0;
-      width: auto;
+   .ding-library-right {
+     float: left;
+     clear: none;
+     margin-bottom: 0;
+     width: auto;
 
-      @media #{$wide}, #{$normal} {
-        width: 600px;
-      }
-    }
-  }
+     @media #{$wide}, #{$normal} {
+       width: 600px;
+     }
+   }
+ }
 }
 
 .view-display-id-culture_events_day {
-  margin-bottom: 30px;
+ margin-bottom: 30px;
 }
 
 .page-libraries {
-  .node-ding-library.node-teaser {
-    .views-exposed-widgets input.form-item-title, {
-      border-radius: inherit;
-    
-    }
-    #edit-submit-ding-library {
-    height: 45px;
-    border-radius: inherit;
-    }
+ .node-ding-library.node-teaser {
+   .views-exposed-widgets input.form-item-title, {
+     border-radius: inherit;
+   
+   }
+   #edit-submit-ding-library {
+   height: 45px;
+   border-radius: inherit;
+   }
 
-    .views-exposed-form .views-exposed-widget .form-submit {
-      margin-top: 0;
-      height: 45px;
-    }
-  }
-  .card-body {
-    height: auto;
-  }
+   .views-exposed-form .views-exposed-widget .form-submit {
+     margin-top: 0;
+     height: 45px;
+   }
+ }
+ .card-body {
+   height: auto;
+ }
 }
 .view-ding-library .library-list .views-row:last-child {
-  border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+ border-bottom: 1px solid rgba(38, 38, 38, 0.2);
 }
 .opening-hours-week {
-  .button-next {
-    color: $white;
+ .button-next {
+   color: $white;
+   outline: none;
 
-    &::before {
-      content: "\e904";
-      vertical-align: sub;
-      font-family: 'icomoon';
-      color: $charcoal;
-      line-height: 0.5;
-      font-size: 60px;
-      margin-right: -70px;
-    }
+   &::before {
+     content: "\e904";
+     vertical-align: sub;
+     font-family: 'icomoon';
+     color: $charcoal;
+     line-height: 0.5;
+     font-size: 60px;
+     margin-right: -70px;
+   }
 
-    &:hover {
-      background: transparent;
-    }
-  }
+   &:hover {
+     background: transparent;
+     color: transparent;
+   }
+ }
 
-  .button-previous {
-    color: $white;
+ .button-previous {
+   color: $white;
+   outline: none;
 
-    &::before {
-      content: "\e902";
-      vertical-align: sub;
-      font-family: 'icomoon';
-      color: $charcoal;
-      line-height: 0.5;
-      font-size: 60px;
-      margin-left: -25px;
-    }
+   &::before {
+     content: "\e902";
+     vertical-align: sub;
+     font-family: 'icomoon';
+     color: $charcoal;
+     line-height: 0.5;
+     font-size: 60px;
+     margin-left: -25px;
+   }
 
-    &:hover {
-      background: transparent;
-    }
-  }
+   &:hover {
+     background: transparent;
+     color: transparent;
+   }
+ }
 }
 
 .node-ding-library.node-teaser {
-  a.maps-link {
-    float: right;
-    position: relative;
-  
-    @media #{$wide}, #{$normal} {
-      float: right;
-      position: absolute;
-      top: 0;
-      right: 0;
-    }
-  }
+ a.maps-link {
+   float: right;
+   position: relative;
+ 
+   @media #{$wide}, #{$normal} {
+     float: right;
+     position: absolute;
+     top: 0;
+     right: 0;
+   }
+ }
 
-  .field-name-field-ding-library-phone-number,
-  .field-name-field-ding-library-fax-number,
-  .field-name-field-ding-library-mail,
-  .field-name-field-ding-library-links {
-    .field-items {
-      padding-left: 60px;
-
-      @media #{$wide}, #{$normal} {
-        padding-left: 120px;
-      }
-    }
-  }
+ .field-name-field-ding-library-phone-number,
+ .field-name-field-ding-library-fax-number,
+ .field-name-field-ding-library-mail,
+ .field-name-field-ding-library-links {
+   .field-items {
+     padding-left: 120px;
+   }
+ }
 }
 .edit-title-wrapper {
-  padding-right: 0;
+ padding-right: 0;
 }
 
 .pane-ding-event-ding-event-library-list,
 .pane-ding-news-ding-news-library-list {
-  .views-row {
-    .card-img-top {
-      display: block;
-    }
-  }
+ .views-row {
+   .card-img-top {
+     display: block;
+   }
+ }
 }
 
 #views-exposed-form-ding-library-ding-library-libraries-list,
 #views-exposed-form-ding-news-ding-news-list,
 #views-exposed-form-ding-multiple-search-panel-pane-1 {
-  .views-widget-filter-title,
-  .views-widget-filter-search_api_views_fulltext {
-    width: 75%;
-    padding: 2px 0 2px 0;
-  }
-  .views-submit-button {
-    padding: 0;
-    width: 25%;
-    margin-top: 0;
-  }
+ .views-widget-filter-title,
+ .views-widget-filter-search_api_views_fulltext {
+   width: 75%;
+   padding: 2px 0 2px 0;
+ }
+ .views-submit-button {
+   padding: 0;
+   width: 25%;
+   margin-top: 0;
+ }
 }
 .views-exposed-form .views-exposed-widget .form-submit{
-  margin-top: 0;
-  margin-bottom: 0;
-  height: 45px;
-  position: relative;
-  top: 6px;
+ margin-top: 0;
+ margin-bottom: 0;
+ height: 45px;
+ position: relative;
+ top: 6px;
 }
 
 .views-exposed-widgets input {
-  border-radius: 0;
+ border-radius: 0;
 }
 
 .page-search .views-exposed-widget.views-submit-button {
-  display: block;
+ display: block;
 }
 
 .page-search {
-  .card-body {
-    height: auto;
-  }
+ .card-body {
+   height: auto;
+ }
 
 
-  .ding-campaign {
-    img {
-      width: auto;
-    }
-  }
+ .ding-campaign {
+   img {
+     width: auto;
+   }
+ }
 
-  .views-exposed-widget.views-submit-button {
-    border-top: 0;
-  }
+ .views-exposed-widget.views-submit-button {
+   border-top: 0;
+ }
 
-  .search-right {
-    padding-bottom: 20px;
-  }
+ .search-right {
+   padding-bottom: 20px;
+ }
 }
 
 .node-type-ding-event,
 .node-type-ding-news {
-  article {
-    margin-bottom: 45px;
-  }
+ article {
+   margin-bottom: 45px;
+ }
 }
