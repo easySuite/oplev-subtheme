@@ -70,6 +70,9 @@
 
       .navbar {
         position: initial;
+        box-shadow: 0 5px 15px 0 rgba(0,0,0,.3);
+        padding-top: 0;
+        padding-bottom: 0; 
 
         @media #{$tablet} {
           &.navbar-expand-lg {
@@ -78,25 +81,27 @@
             top: 0;
             z-index: 999;
             background: $color-secondary;
+            box-shadow: none;
             left: 0;
 
             .main-menu {
-              margin-top: -20px;
+              margin-top: -23px;
+              padding-left: 0px;
+              margin-left: 0px;
             }
           }
         }
         @media #{$wide}, #{$normal} {
           position: relative;
+          box-shadow: none;
           &.navbar-expand-lg {
             width: auto;
-           // margin-top: 20px;
 
            .main-menu {
             margin-top: 0;
+            padding: 15px 0 10px 30px;
           }
           }
-
-          
         }
       }
 
@@ -148,6 +153,13 @@
                   background-color: $charcoal;
                   color: $color-primary;
                   border: none;
+                  position: relative;
+                  left: -3px;
+
+                  @media #{$wide}, #{$normal} {
+                    left: initial;
+                  }
+                  
 
                   ::placeholder {
                     color: $color-primary;

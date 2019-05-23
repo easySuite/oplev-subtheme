@@ -39,5 +39,13 @@
         });
       }
     });
+
+    var $header = $('.secondary-menu-wrapper');
+    var $element = $('.secondary-menu li');
+    var $body = $('.navbar-collapse .main-menu');
+
+    if ($header.css('position') === 'relative') {
+      $element.addClass('secondary-menu').appendTo($body);
+    }
   });
 })(jQuery);
