@@ -49,10 +49,14 @@
 
   .main-menu {
     background-color: $color-secondary;
-    z-index: 10;
+    z-index: 9999;
+    height: 300px;
     left: 0;
     right: 0;
-    position: fixed;
+    
+    @media  #{$wide}, #{$normal} {
+      height: auto;
+      }
 
     @media #{$tablet} {
       top: 15px;
@@ -76,7 +80,7 @@
     li {
       display: block;
       width: 100%;
-      //padding: 20px 0;
+      padding: 20px 0;
       border-bottom: 1px solid rgba(38,38,38,.2);
       a {
         font-size: 18px;
@@ -85,13 +89,21 @@
 
       @media #{$wide}, #{$normal} {
         margin-right: 25px;
-       // padding: 0;
         display: inline-block;
+        padding: 0;
         width: auto;
         border-bottom: none;
         a {
           font-size: 16px;
           margin-left: 0px;
+        }
+      }
+
+      &.secondary-menu {
+        background-color: $color-primary;
+
+        a:hover {
+          color: $color-secondary;
         }
       }
     }
@@ -139,17 +151,29 @@
 }
 
 .topbar .topbar-inner .secondary-menu-wrapper {
-  min-width: 600px;
-  padding-right: 0;
-  top: 0;
+  position: relative;
 
-  .secondary-menu {
-    background-color: $color-primary;
+  @media #{$wide}, #{$normal} {
     position: absolute;
+    min-width: 600px;
+    padding-right: 0;
+    top: 0;
+    height: 70px;;
     right: 0;
-    height: 70px;
     margin-top: -5px;
     margin-right: -10px;
+  }
+
+  .secondary-menu {
+    position: relative;
+    @media #{$tablet}, #{$wide}, #{$normal} {
+      background-color: $color-primary;
+      position: absolute;
+      right: 0;
+      height: 70px;
+      margin-top: -5px;
+      margin-right: -10px;
+    }
 
     li {
       padding: 20px 10px 20px 0px;

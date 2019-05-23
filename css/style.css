@@ -6720,17 +6720,42 @@ a.text-dark:hover, a.text-dark:focus {
     top: -18px;
     right: -47px; }
 
-@media screen and (min-width: 767px), screen and (min-width: 1200px) {
-  .events-tomorrow,
-  .events-next_weekend,
-  .top_events {
-    padding: 0 5px; } }
+.events-next_weekend div {
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100px; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .events-next_weekend div {
+      text-overflow: initial;
+      width: auto; } }
 
-@media screen and (min-width: 992px) {
-  .events-tomorrow,
-  .events-next_weekend,
-  .top_events {
-    padding: 0 15px; } }
+.events-tomorrow {
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px; }
+
+.events-tomorrow,
+.events-next_weekend,
+.top_events {
+  display: inline-block;
+  width: auto;
+  flex: auto;
+  max-width: min-content;
+  padding: 0 5px; }
+  .events-tomorrow a,
+  .events-next_weekend a,
+  .top_events a {
+    padding: 5px; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .events-tomorrow,
+    .events-next_weekend,
+    .top_events {
+      max-width: 100%;
+      display: inline-block; } }
 
 fieldset {
   border: none;
@@ -7341,10 +7366,13 @@ body .search-overlay--wrapper {
   float: left; }
   #page .main-menu-wrapper .main-menu {
     background-color: #e8e6e7;
-    z-index: 10;
+    z-index: 9999;
+    height: 300px;
     left: 0;
-    right: 0;
-    position: fixed; }
+    right: 0; }
+    @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      #page .main-menu-wrapper .main-menu {
+        height: auto; } }
     @media screen and (min-width: 767px) {
       #page .main-menu-wrapper .main-menu {
         top: 15px;
@@ -7364,6 +7392,7 @@ body .search-overlay--wrapper {
     #page .main-menu-wrapper .main-menu li {
       display: block;
       width: 100%;
+      padding: 20px 0;
       border-bottom: 1px solid rgba(38, 38, 38, 0.2); }
       #page .main-menu-wrapper .main-menu li a {
         font-size: 18px;
@@ -7372,11 +7401,16 @@ body .search-overlay--wrapper {
         #page .main-menu-wrapper .main-menu li {
           margin-right: 25px;
           display: inline-block;
+          padding: 0;
           width: auto;
           border-bottom: none; }
           #page .main-menu-wrapper .main-menu li a {
             font-size: 16px;
             margin-left: 0px; } }
+      #page .main-menu-wrapper .main-menu li.secondary-menu {
+        background-color: #50af9c; }
+        #page .main-menu-wrapper .main-menu li.secondary-menu a:hover {
+          color: #e8e6e7; }
     #page .main-menu-wrapper .main-menu a {
       color: #262626;
       text-transform: uppercase;
@@ -7407,16 +7441,27 @@ body .search-overlay--wrapper {
       transform: matrix3d(1.09884, 0.03257, 0, 0.00019, 0, 1.09884, 0, 0, 0, 0, 1, 0, 23, 9, 0, 1); } }
 
 .topbar .topbar-inner .secondary-menu-wrapper {
-  min-width: 600px;
-  padding-right: 0;
-  top: 0; }
+  position: relative; }
+  @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .topbar .topbar-inner .secondary-menu-wrapper {
+      position: absolute;
+      min-width: 600px;
+      padding-right: 0;
+      top: 0;
+      height: 70px;
+      right: 0;
+      margin-top: -5px;
+      margin-right: -10px; } }
   .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu {
-    background-color: #50af9c;
-    position: absolute;
-    right: 0;
-    height: 70px;
-    margin-top: -5px;
-    margin-right: -10px; }
+    position: relative; }
+    @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu {
+        background-color: #50af9c;
+        position: absolute;
+        right: 0;
+        height: 70px;
+        margin-top: -5px;
+        margin-right: -10px; } }
     .topbar .topbar-inner .secondary-menu-wrapper .secondary-menu li {
       padding: 20px 10px 20px 0px;
       border-right: transparent;
@@ -7992,30 +8037,36 @@ input[type="submit"] {
     height: auto;
     padding: 0 10px; }
 
+.view-display-id-ding_news_list_library h3 .date-display-single,
 .view-display-id-ding_event_list h3 .date-display-single,
 .view-display-id-ding_event_list_library h3 .date-display-single {
   font-size: 40px;
   text-transform: uppercase; }
 
+.view-display-id-ding_news_list_library .view-content,
 .view-display-id-ding_event_list .view-content,
 .view-display-id-ding_event_list_library .view-content {
   flex: 0 0 100%;
   max-width: 100%; }
   @media screen and (min-width: 767px) {
+    .view-display-id-ding_news_list_library .view-content,
     .view-display-id-ding_event_list .view-content,
     .view-display-id-ding_event_list_library .view-content {
       margin: 0 30px; } }
+  .view-display-id-ding_news_list_library .view-content .views-row,
   .view-display-id-ding_event_list .view-content .views-row,
   .view-display-id-ding_event_list_library .view-content .views-row {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 15px; }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
+      .view-display-id-ding_news_list_library .view-content .views-row,
       .view-display-id-ding_event_list .view-content .views-row,
       .view-display-id-ding_event_list_library .view-content .views-row {
         flex: 0 0 48.33333%;
         max-width: 48.33333%;
         display: inline-block; } }
+  .view-display-id-ding_news_list_library .view-content .views-row-odd,
   .view-display-id-ding_event_list .view-content .views-row-odd,
   .view-display-id-ding_event_list_library .view-content .views-row-odd {
     margin-right: 15px; }
@@ -8088,16 +8139,60 @@ fieldset.collapsible .fieldset-title::after {
     @media screen and (min-width: 767px) {
       .page-arrangementer .filters-group .label {
         padding: 0 5px;
-        position: absolute;
-        margin-top: -27px; } }
+        position: relative; } }
     @media screen and (min-width: 1200px), screen and (min-width: 992px) {
       .page-arrangementer .filters-group .label {
         position: relative;
         margin-top: 0px; } }
+  .page-arrangementer .filters-group a {
+    padding: 5px; }
 
-.ctools-auto-submit-full-form .views-exposed-widget .views-widget .form-item.form-type-select > div.form-checkboxes {
-  overflow: hidden;
-  transition: height 0.3s ease-in-out; }
+@keyframes checkbox-collapse-in {
+  0% {
+    content: "\002B"; }
+  50% {
+    color: white; }
+  100% {
+    content: "\2212"; } }
+
+@keyframes checkbox-collapse-out {
+  0% {
+    content: "\2212"; }
+  50% {
+    color: white; }
+  100% {
+    content: "\002B"; } }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container {
+  width: 100%; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select {
+  max-width: 100%; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: -12px;
+  content: '\002B';
+  animation: checkbox-collapse-out 0.35s ease;
+  color: #494949;
+  font-size: 20px;
+  font-weight: bold; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label.chexbox-items-collapsed:after {
+  content: "\2212";
+  animation: checkbox-collapse-in 0.35s ease; }
+
+.ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label {
+  position: relative;
+  display: block; }
+  .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+    display: block; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label {
+      position: static; }
+      .ctools-auto-submit-full-form .views-exposed-widget.collapsible-checkbox-container .views-widget .form-item.form-type-select > label::after {
+        display: none; } }
 
 .ding-campaign {
   flex: 0 0 100%;
@@ -9237,13 +9332,9 @@ article.node.node-ding-page .field-name-field-ding-page-tags {
           padding: 0;
           margin-left: 0; } }
     .site-header .navigation-inner .secondary-menu-wrapper {
-      display: none;
-      z-index: -1; }
-      @media screen and (min-width: 1200px), screen and (min-width: 992px) {
-        .site-header .navigation-inner .secondary-menu-wrapper {
-          display: block;
-          float: right;
-          z-index: 1; } }
+      display: block;
+      float: right;
+      z-index: 1; }
       .site-header .navigation-inner .secondary-menu-wrapper > ul.secondary-menu > li > a {
         padding: 20px 0;
         display: block; }
@@ -10584,7 +10675,10 @@ table#calendar {
           top: -20px;
           left: -3px; } }
       #page .site-header .navigation-wrapper .navigation-inner .navbar {
-        position: initial; }
+        position: initial;
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.3);
+        padding-top: 0;
+        padding-bottom: 0; }
         @media screen and (min-width: 767px) {
           #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg {
             width: 100%;
@@ -10592,6 +10686,7 @@ table#calendar {
             top: 0;
             z-index: 999;
             background: #e8e6e7;
+            box-shadow: none;
             left: 0; }
             #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg .main-menu {
               margin-top: -23px;
@@ -10599,7 +10694,8 @@ table#calendar {
               margin-left: 0px; } }
         @media screen and (min-width: 1200px), screen and (min-width: 992px) {
           #page .site-header .navigation-wrapper .navigation-inner .navbar {
-            position: relative; }
+            position: relative;
+            box-shadow: none; }
             #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg {
               width: auto; }
               #page .site-header .navigation-wrapper .navigation-inner .navbar.navbar-expand-lg .main-menu {
