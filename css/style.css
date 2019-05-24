@@ -10239,6 +10239,9 @@ table#calendar {
 .ding_nodelist .library a, .ding_nodelist span {
   font-family: "SourceSansPro-Bold"; }
 
+.ding_nodelist span.item-library {
+  visibility: hidden; }
+
 /* Instagram styles
    ========================================================================== */
 .pane-instagram-block-instagram-block {
@@ -10614,7 +10617,7 @@ table#calendar {
     max-width: 60%;
     margin-right: 5px; }
     .pane-ding-event-calendar-ding-event-calendar #eventList .event-items .event-title a {
-      color: #50af9c;
+      color: #ffffff;
       text-decoration: none;
       font-family: "SourceSansPro-Bold";
       font-size: 18px; }
@@ -10748,7 +10751,7 @@ table#calendar {
               #page .site-header .navigation-wrapper .navigation-inner .pane-search-form .pane-content .form-custom .form-item-search-block-form input.auto-submit {
                 width: 100%;
                 margin-right: 0;
-                background-color: #262626;
+                background-color: #e8e6e7;
                 color: #50af9c;
                 border: none;
                 position: relative;

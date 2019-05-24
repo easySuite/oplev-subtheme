@@ -9,4 +9,8 @@
   .library a, span {
     font-family: $font-family-bolder;
   }
+
+  span.item-library {
+    visibility: hidden;
+  }
 }
