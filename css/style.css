@@ -7333,6 +7333,15 @@ body .search-overlay--wrapper {
   width: 100%;
   height: auto; }
 
+.bottom img {
+  margin-left: 10px; }
+
+.html #page .footer .footer-inner {
+  margin: 0 20px; }
+
+.ticket.button {
+  color: #262626; }
+
 .topbar-menu .menu-item {
   background-color: #50af9c;
   color: #ffffff; }
@@ -7477,7 +7486,7 @@ body .search-overlay--wrapper {
         border-right: transparent; }
   .topbar .topbar-inner .secondary-menu-wrapper > ul.secondary-menu > li > a {
     display: block;
-    color: #494949; }
+    color: #262626; }
   .topbar .topbar-inner .secondary-menu-wrapper > ul.secondary-menu > li a {
     font-size: 14px; }
     .topbar .topbar-inner .secondary-menu-wrapper > ul.secondary-menu > li a:hover {
@@ -10260,6 +10269,9 @@ table#calendar {
 
 .ding_nodelist span.item-library {
   visibility: hidden; }
+
+.ding_nodelist.ding_nodelist-taxonomy .item .item-details {
+  top: -9px; }
 
 /* Instagram styles
    ========================================================================== */
