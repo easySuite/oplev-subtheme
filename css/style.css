@@ -7779,7 +7779,8 @@ a:link {
 .ticket.button {
   background: #50af9c;
   padding: 15px 90px 15px 15px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  display: inline-block; }
   .ticket.button:hover, .ticket.button:active, .ticket.button:focus, .ticket.button:visited {
     color: #262626; }
 
