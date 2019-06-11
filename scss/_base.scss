@@ -102,7 +102,8 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-.html .ding-campaign-grid-wrapper {
+.html .ding-campaign-grid-wrapper,
+.html .ding-campaign-wrapper {
   img.ding-campaign-image {
     display: block;
     width: 100%;
