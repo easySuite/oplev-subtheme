@@ -108,6 +108,10 @@ body {
   height: auto;
 }
 
+.ding-campaign-grid-wrapper .ding-campaign-grid-item .media {
+  display: block;
+}
+
 .bottom {
   img {
     margin-left: 10px;
@@ -122,4 +126,18 @@ body {
 
 .ticket.button {
   color: $charcoal;
+}
+
+.page-admin .col4, .col4 {
+  width: 33%;
+}
+
+#page .node-ding-event {
+  img {
+   width: 100%;
+  }
+
+  .left .field-items {
+    display: block;
+  }
 }

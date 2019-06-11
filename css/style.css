@@ -7333,6 +7333,9 @@ body .search-overlay--wrapper {
   width: 100%;
   height: auto; }
 
+.ding-campaign-grid-wrapper .ding-campaign-grid-item .media {
+  display: block; }
+
 .bottom img {
   margin-left: 10px; }
 
@@ -7341,6 +7344,15 @@ body .search-overlay--wrapper {
 
 .ticket.button {
   color: #262626; }
+
+.page-admin .col4, .col4 {
+  width: 33%; }
+
+#page .node-ding-event img {
+  width: 100%; }
+
+#page .node-ding-event .left .field-items {
+  display: block; }
 
 .topbar-menu .menu-item {
   background-color: #50af9c;
