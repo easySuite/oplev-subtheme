@@ -7328,13 +7328,22 @@ body .search-overlay--wrapper {
   100% {
     transform: rotate(360deg); } }
 
+.html .ding-campaign-grid-wrapper img.ding-campaign-image,
 .html .ding-campaign-wrapper img.ding-campaign-image {
   display: block;
   width: 100%;
   height: auto; }
 
-.ding-campaign-grid-wrapper .ding-campaign-grid-item .media {
-  display: block; }
+.html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
+.html .ding-campaign-wrapper .ding-campaign-grid-item {
+  margin: 0 0 20px 0; }
+  @media screen and (min-width: 767px), screen and (min-width: 992px), screen and (min-width: 1200px) {
+    .html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
+    .html .ding-campaign-wrapper .ding-campaign-grid-item {
+      margin: 0 10px 30px 10px; } }
+  .html .ding-campaign-grid-wrapper .ding-campaign-grid-item .media,
+  .html .ding-campaign-wrapper .ding-campaign-grid-item .media {
+    display: block; }
 
 .bottom img {
   margin-left: 10px; }
