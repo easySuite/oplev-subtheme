@@ -102,14 +102,23 @@ body {
   100% { transform: rotate(360deg); }
 }
 
-.html .ding-campaign-wrapper img.ding-campaign-image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+.html .ding-campaign-grid-wrapper {
+  img.ding-campaign-image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
-.ding-campaign-grid-wrapper .ding-campaign-grid-item .media {
-  display: block;
+ .ding-campaign-grid-item {
+   margin: 0 0 20px 0;
+
+   @media #{$tablet}, #{$normal}, #{$wide} {
+      margin: 0 10px 30px 10px;
+    }
+    .media {
+      display: block;
+    }
+  }
 }
 
 .bottom {
