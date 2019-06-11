@@ -13,4 +13,10 @@
   span.item-library {
     visibility: hidden;
   }
+
+ &.ding_nodelist-taxonomy {
+     .item .item-details {
+       top: -9px
+     }
+  }
 }
