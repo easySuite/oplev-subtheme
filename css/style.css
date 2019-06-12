@@ -7345,8 +7345,9 @@ body .search-overlay--wrapper {
   .html .ding-campaign-wrapper .ding-campaign-grid-item .media {
     display: block; }
 
-.bottom img {
-  margin-left: 10px; }
+.bottom .pane-content p {
+  margin-left: 15px;
+  text-align: left; }
 
 .html #page .footer .footer-inner {
   margin: 0 20px; }
@@ -9528,25 +9529,6 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 /* Ding nodelist styles
    ========================================================================== */
-.page-ding-frontpage .ding_nodelist-carousel .article_image img,
-.page-ding-frontpage .ding_nodelist-carousel .event-image img {
-  height: 100%; }
-  @media screen and (min-width: 1200px), screen and (min-width: 992px), tablet {
-    .page-ding-frontpage .ding_nodelist-carousel .article_image img,
-    .page-ding-frontpage .ding_nodelist-carousel .event-image img {
-      height: auto; } }
-
-.page-ding-frontpage .ding_nodelist-carousel .ding_nodelist-items .event-image img {
-  height: 500px; }
-
-.ding_nodelist-carousel .article_image img,
-.ding_nodelist-carousel .event-image img {
-  height: 100%; }
-  @media screen and (min-width: 1200px), screen and (min-width: 992px), tablet {
-    .ding_nodelist-carousel .article_image img,
-    .ding_nodelist-carousel .event-image img {
-      height: auto; } }
-
 .ding_nodelist .more-links {
   margin-top: 0; }
 
@@ -10283,6 +10265,23 @@ table#calendar {
 .node-type-ding-news article {
   margin-bottom: 45px; }
 
+.ding_nodelist.ding_nodelist-carousel .event-image {
+  text-align: center;
+  font: 0/0 a; }
+  .ding_nodelist.ding_nodelist-carousel .event-image::before {
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;
+    /* vertical alignment of the inline element */
+    height: 100%; }
+  .ding_nodelist.ding_nodelist-carousel .event-image img {
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    margin-top: auto;
+    margin-bottom: auto; }
+
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
 
@@ -10600,6 +10599,12 @@ table#calendar {
    ========================================================================== */
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar .navi-heading h2 {
   margin-bottom: 0; }
+
+.pane-ding-event-calendar-ding-event-calendar a.use-ajax.slick-arrow {
+  color: transparent; }
+  .pane-ding-event-calendar-ding-event-calendar a.use-ajax.slick-arrow::before {
+    width: 30px;
+    height: 30px; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar h2 {
   text-transform: lowercase;
