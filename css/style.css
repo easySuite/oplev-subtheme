@@ -9677,9 +9677,6 @@ ul.main-menu > li, ul.secondary-menu > li {
   font-family: "SourceSansProRegular";
   font-size: 18px; }
 
-.ding_nodelist .ding_nodelist-items .item-body {
-  padding-right: 100px; }
-
 .ding_nodelist .ding_nodelist-items .item-title {
   left: -8px;
   position: relative; }
@@ -9756,10 +9753,7 @@ ul.main-menu > li, ul.secondary-menu > li {
   color: #262626; }
 
 .ding_nodelist-taxonomy .more {
-  display: block;
-  position: absolute;
-  bottom: 10px;
-  right: 0; }
+  display: block; }
 
 .ding_nodelist-taxonomy .item .news-link {
   display: block;
@@ -9852,7 +9846,10 @@ ul.main-menu > li, ul.secondary-menu > li {
 .ding_nodelist-taxonomy .more {
   background-color: #50af9c;
   padding: 10px;
-  border-radius: 5px; }
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  float: right; }
 
 .ding_nodelist .more-links .more-link {
   background-color: #50af9c; }
@@ -10599,12 +10596,6 @@ table#calendar {
    ========================================================================== */
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar .navi-heading h2 {
   margin-bottom: 0; }
-
-.pane-ding-event-calendar-ding-event-calendar a.use-ajax.slick-arrow {
-  color: transparent; }
-  .pane-ding-event-calendar-ding-event-calendar a.use-ajax.slick-arrow::before {
-    width: 30px;
-    height: 30px; }
 
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar h2 {
   text-transform: lowercase;
