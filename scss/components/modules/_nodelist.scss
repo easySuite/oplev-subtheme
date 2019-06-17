@@ -1,26 +1,6 @@
 
 .ding_nodelist {
   &.ding_nodelist-carousel {
-    .event-image {
-      text-align: center; 
-      font: 0/0 a; 
-
-      &::before {
-        content: ' ';
-        display: inline-block;
-        vertical-align: middle;  /* vertical alignment of the inline element */
-        height: 100%;
-      }
-    
-      img {
-        display: block;
-        top: 0;
-        bottom: 0;
-        position: absolute;
-        margin-top: auto;
-        margin-bottom: auto;
-      }
-    }
     .event-day {
       font-family: $font-family-bolder;
     }

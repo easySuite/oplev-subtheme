@@ -10289,23 +10289,6 @@ table#calendar {
 .node-type-ding-news article {
   margin-bottom: 45px; }
 
-.ding_nodelist.ding_nodelist-carousel .event-image {
-  text-align: center;
-  font: 0/0 a; }
-  .ding_nodelist.ding_nodelist-carousel .event-image::before {
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;
-    /* vertical alignment of the inline element */
-    height: 100%; }
-  .ding_nodelist.ding_nodelist-carousel .event-image img {
-    display: block;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    margin-top: auto;
-    margin-bottom: auto; }
-
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
 
