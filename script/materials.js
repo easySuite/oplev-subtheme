@@ -54,7 +54,7 @@ function switchImgSliderStyles(element) {
 sliderImg.load(function() {
   var img = $(this);
   var div = $("<div />").css({
-    background: "url(" + img.attr("src") + ") no-repeat",
+    background: "url(" + img.attr("src") + ") no-repeat" + "center center",
     width: img.width() + "px",
     height: img.height() + "px",
     'max-width': img.naturalWidth ? img.naturalWidth : '100%',
@@ -72,7 +72,6 @@ $(window).resize(function() {
   var replacedDiv = $('.replaced-event-image');
   var notMobile = ($(window).width() >=  768);
 
-  console.log(replacedDiv.css('max-width'), replacedDiv.css('max-height'));
   replacedDiv.css({
     width: notMobile ? replacedDiv.css('max-width') : replacedDiv.parent().width() + "px",
     height: notMobile ? replacedDiv.css('max-height') : replacedDiv.parent().height() + "px"

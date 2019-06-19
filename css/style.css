@@ -7364,6 +7364,9 @@ body .search-overlay--wrapper {
 #page .node-ding-event .left .field-items {
   display: block; }
 
+.col-md-8 .panel-separator {
+  margin-bottom: 20px; }
+
 .topbar-menu .menu-item {
   background-color: #50af9c;
   color: #ffffff; }
@@ -10268,15 +10271,19 @@ table#calendar {
 .node-type-ding-news article {
   margin-bottom: 45px; }
 
-@media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
-  .ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
-  .ding_nodelist.ding_nodelist-carousel .event-image img {
-    display: block;
-    top: 0;
-    bottom: 0;
-    position: relative;
-    margin-top: auto;
-    margin-bottom: auto; } }
+.ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
+.ding_nodelist.ding_nodelist-carousel .event-image img {
+  background-position: center center; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
+    .ding_nodelist.ding_nodelist-carousel .event-image img {
+      display: block;
+      top: 0;
+      bottom: 0;
+      position: relative;
+      margin-top: auto;
+      margin-bottom: auto;
+      background-position: center center; } }
 
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
