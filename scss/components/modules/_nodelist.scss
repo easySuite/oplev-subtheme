@@ -1,6 +1,20 @@
 
 .ding_nodelist {
   &.ding_nodelist-carousel {
+    .event-image {
+      .replaced-event-image,
+      img {
+        @media #{$tablet}, #{$wide}, #{$normal} {
+        display: block;
+        top: 0;
+        bottom: 0;
+        position: relative;
+        margin-top: auto;
+        margin-bottom: auto;
+        }
+      }
+    }
+
     .event-day {
       font-family: $font-family-bolder;
     }
@@ -12,11 +26,25 @@
 
   span.item-library {
     visibility: hidden;
+    display: none;
   }
 
  &.ding_nodelist-taxonomy {
      .item .item-details {
-       top: -9px;
+       top: -5px;
      }
+  }
+
+  .more,
+  .news-link.more-link {
+    background: transparent;
+    a {
+      text-decoration: underline;
+    }
+  }
+
+  .ding_nodelist-items .item-body {
+    clear: both;
+    display: block;
   }
 }

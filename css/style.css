@@ -8607,7 +8607,7 @@ fieldset.collapsible .fieldset-title::after {
     width: 100px;
     float: left; }
 
-.pane-all-opening-hours .page-title {
+.pane-all-opening-hours .pane-content {
   overflow-x: scroll; }
 
 .opening-hours-table {
@@ -9551,16 +9551,6 @@ ul.main-menu > li, ul.secondary-menu > li {
     padding: 3px 5px;
     border-radius: 4px; }
 
-.ding_nodelist.ding_nodelist-carousel .event-image img {
-  display: block;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  margin-top: auto;
-  margin-bottom: auto;
-  min-width: 300px;
-  min-height: 400px; }
-
 .ding_nodelist.ding_nodelist-carousel .slick-dots li.slick-active a {
   color: #262626; }
 
@@ -9681,7 +9671,6 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 .ding_nodelist .ding_nodelist-items h2.item-title a {
   color: #262626;
-  font-size: 16px;
   font-family: "SourceSansProSemibold"; }
 
 .ding_nodelist .ding_nodelist-items .date,
@@ -9771,9 +9760,12 @@ ul.main-menu > li, ul.secondary-menu > li {
 
 .ding_nodelist-taxonomy .item .news-link {
   display: block;
-  position: absolute;
-  bottom: -16px;
-  right: -10px; }
+  padding: 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 40px;
+  float: right;
+  margin-top: 5px; }
 
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .item-list-image,
 .ding_nodelist-taxonomy .event-list-leaf ~ .item .item-library {
@@ -10276,6 +10268,16 @@ table#calendar {
 .node-type-ding-news article {
   margin-bottom: 45px; }
 
+@media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+  .ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
+  .ding_nodelist.ding_nodelist-carousel .event-image img {
+    display: block;
+    top: 0;
+    bottom: 0;
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto; } }
+
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
 
@@ -10283,10 +10285,22 @@ table#calendar {
   font-family: "SourceSansPro-Bold"; }
 
 .ding_nodelist span.item-library {
-  visibility: hidden; }
+  visibility: hidden;
+  display: none; }
 
 .ding_nodelist.ding_nodelist-taxonomy .item .item-details {
-  top: -9px; }
+  top: -5px; }
+
+.ding_nodelist .more,
+.ding_nodelist .news-link.more-link {
+  background: transparent; }
+  .ding_nodelist .more a,
+  .ding_nodelist .news-link.more-link a {
+    text-decoration: underline; }
+
+.ding_nodelist .ding_nodelist-items .item-body {
+  clear: both;
+  display: block; }
 
 /* Instagram styles
    ========================================================================== */
