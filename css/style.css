@@ -7336,7 +7336,7 @@ body .search-overlay--wrapper {
 
 .html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
 .html .ding-campaign-wrapper .ding-campaign-grid-item {
-  margin: 0 0 20px 0; }
+  margin: 0 0 45px 0; }
   @media screen and (min-width: 767px), screen and (min-width: 992px), screen and (min-width: 1200px) {
     .html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
     .html .ding-campaign-wrapper .ding-campaign-grid-item {
@@ -8334,12 +8334,14 @@ fieldset.collapsible .fieldset-title::after {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start; }
+  .ding-campaign-grid-wrapper .media img {
+    width: 100%; }
 
 .ding-campaign-grid-item {
-  height: 195px;
+  height: 100%;
   flex-basis: 100%;
   -ms-flex: auto;
-  width: 359px;
+  width: 100%;
   position: relative;
   box-sizing: border-box; }
   @media screen and (min-width: 767px) {
@@ -9801,6 +9803,9 @@ ul.main-menu > li, ul.secondary-menu > li {
     .page-ding-frontpage .ding_nodelist-carousel .event-image img {
       height: auto; } }
 
+.pane-ding-nodelist .ding_nodelist-taxonomy .field-name-field-ding-news-category a {
+  font-size: 16px; }
+
 .pane-ding-nodelist .ding_nodelist-taxonomy .event-list-leaf .event-list-day {
   background-color: #50af9c;
   color: #262626; }
@@ -10273,17 +10278,9 @@ table#calendar {
 
 .ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
 .ding_nodelist.ding_nodelist-carousel .event-image img {
-  background-position: center center; }
-  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
-    .ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
-    .ding_nodelist.ding_nodelist-carousel .event-image img {
-      display: block;
-      top: 0;
-      bottom: 0;
-      position: relative;
-      margin-top: auto;
-      margin-bottom: auto;
-      background-position: center center; } }
+  width: 100%;
+  height: auto;
+  padding-bottom: 75%; }
 
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
@@ -10308,6 +10305,9 @@ table#calendar {
 .ding_nodelist .ding_nodelist-items .item-body {
   clear: both;
   display: block; }
+
+.col-md-4 .ding_nodelist-taxonomy .item-list-image {
+  display: none; }
 
 /* Instagram styles
    ========================================================================== */

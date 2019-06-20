@@ -39,45 +39,31 @@
         });
       }
     });
+    
 
-    //-------------------------------------------
-var sliderImg = $('.ding_nodelist.ding_nodelist-carousel .ding_nodelist-items.slick-slider .slick-list .slick-slide .event-image a img');
-
-function switchImgSliderStyles(element) {
+//-------------------------------------------
+function switchImgSliderStyles(imgElement) {
   var notMobile = ($(window).width() >=  768);
-  element.css({
-    'background-position': notMobile ? 'initial' : 'center',
-    'background-size': notMobile ? 'initial' : 'cover'
+  imgElement.css({
+    width: notMobile ? '100%' : imgElement.parent().width() + "px",
+    height: notMobile ? '100%' : imgElement.parent().height() + "px",
+    background: notMobile ? 'none' : "url(" + imgElement.attr("src") + ") center center / cover no-repeat",
+    'box-sizing': notMobile ? 'initial' : 'border-box',
+    'padding-left': notMobile ? 0 : imgElement.parent().width()
   });
 }
 
-sliderImg.load(function() {
-  var img = $(this);
-  var div = $("<div />").css({
-    background: "url(" + img.attr("src") + ") no-repeat" + "center center",
-    width: img.width() + "px",
-    height: img.height() + "px",
-    'max-width': img.naturalWidth ? img.naturalWidth : '100%',
-    'max-height': img.naturalHeight ? img.naturalHeight : '100%'
+function parseSliderImages() {
+  var sliderImg = $('.ding_nodelist.ding_nodelist-carousel .ding_nodelist-items.slick-slider .slick-list .slick-slide .event-image a img');
+  sliderImg.each(function(i, elem) {
+    var img = $(elem);
+    switchImgSliderStyles(img);
   });
+}
 
-  div.html(img.attr("alt"));
-  div.addClass("replaced-event-image");
-
-  img.replaceWith(div);
-  switchImgSliderStyles(div);
-});
-
+parseSliderImages();
 $(window).resize(function() {
-  var replacedDiv = $('.replaced-event-image');
-  var notMobile = ($(window).width() >=  768);
-
-  replacedDiv.css({
-    width: notMobile ? replacedDiv.css('max-width') : replacedDiv.parent().width() + "px",
-    height: notMobile ? replacedDiv.css('max-height') : replacedDiv.parent().height() + "px"
-  });
-
-  switchImgSliderStyles(replacedDiv);
+  parseSliderImages();
 });
 //---------------------------------------------
 
