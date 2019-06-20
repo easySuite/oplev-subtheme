@@ -4,16 +4,9 @@
     .event-image {
       .replaced-event-image,
       img {
-        @media #{$tablet}, #{$wide}, #{$normal} {
-        display: block;
-        top: 0;
-        bottom: 0;
-        position: relative;
-        margin-top: auto;
-        margin-bottom: auto;
-        background-position: center center;
-        }
-        background-position: center center;
+        width: 100%;
+        height: auto;
+        padding-bottom: 75%;
       }
     }
 
@@ -48,5 +41,11 @@
   .ding_nodelist-items .item-body {
     clear: both;
     display: block;
+  }
+}
+
+.col-md-4 .ding_nodelist-taxonomy {
+  .item-list-image {
+    display: none;
   }
 }
