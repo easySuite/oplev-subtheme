@@ -8614,6 +8614,10 @@ fieldset.collapsible .fieldset-title::after {
 
 .pane-all-opening-hours .pane-content {
   overflow-x: scroll; }
+  @media tablet, screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .pane-all-opening-hours .pane-content {
+      overflow: hidden;
+      margin-bottom: 25px; } }
 
 .opening-hours-table {
   width: 100%;
@@ -10275,12 +10279,6 @@ table#calendar {
 .node-type-ding-event article,
 .node-type-ding-news article {
   margin-bottom: 45px; }
-
-.ding_nodelist.ding_nodelist-carousel .event-image .replaced-event-image,
-.ding_nodelist.ding_nodelist-carousel .event-image img {
-  width: 100%;
-  height: auto;
-  padding-bottom: 75%; }
 
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }

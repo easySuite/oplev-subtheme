@@ -1,15 +1,6 @@
 
 .ding_nodelist {
   &.ding_nodelist-carousel {
-    .event-image {
-      .replaced-event-image,
-      img {
-        width: 100%;
-        height: auto;
-        padding-bottom: 75%;
-      }
-    }
-
     .event-day {
       font-family: $font-family-bolder;
     }
