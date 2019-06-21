@@ -10291,7 +10291,8 @@ table#calendar {
   display: none; }
 
 .ding_nodelist.ding_nodelist-taxonomy .item .item-details {
-  top: -5px; }
+  top: -5px;
+  display: block; }
 
 .ding_nodelist .more,
 .ding_nodelist .news-link.more-link {
