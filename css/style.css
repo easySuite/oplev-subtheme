@@ -7860,6 +7860,14 @@ html #page .content-wrapper .content-inner #kultur_calendar-day .kultur_calendar
   .front .ding-campaign-wrapper .node-ding-campaign {
     margin-bottom: 20px; }
 
+.html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
+.html .ding-campaign-wrapper .ding-campaign-grid-item {
+  margin: 0 10px 50px 10px; }
+  .html .ding-campaign-grid-wrapper .ding-campaign-grid-item .ding-campaign-grid-title,
+  .html .ding-campaign-wrapper .ding-campaign-grid-item .ding-campaign-grid-title {
+    position: absolute;
+    top: -35px; }
+
 .not-front .ding-campaign-wrapper {
   max-width: 320px; }
   .not-front .ding-campaign-wrapper .node-ding-campaign {
@@ -10294,6 +10302,9 @@ table#calendar {
 .ding_nodelist.ding_nodelist-taxonomy .item .item-details {
   top: -5px;
   display: block; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .ding_nodelist.ding_nodelist-taxonomy .item .item-details {
+      display: table-cell; } }
 
 .ding_nodelist .more,
 .ding_nodelist .news-link.more-link {
