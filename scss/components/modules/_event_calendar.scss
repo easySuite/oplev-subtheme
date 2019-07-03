@@ -8,6 +8,43 @@
 
   #eventsCalendar {
 
+    a.slick-next {
+      position: absolute;
+      max-width: 30px;
+      right: 0;
+      margin: 0;
+      max-height:30px;
+    }
+    
+     a.slick-prev {  
+      position: absolute;
+      width: 30px;
+      left: 0;
+      margin: 0;
+      height: 30px;
+    }
+    
+     a.slick-next:before {
+      position: relative;
+      top: 3px;
+      display: block;
+      height: 30px !important;
+      width: 30px;
+      line-height: 1;
+    }
+    
+    a.slick-prev:before {
+      display: block;
+      position: relative;
+      top: 4px;
+      height: 30px !important;
+      width: 30px;
+      line-height: 1;
+    } 
+    .navi-heading .control {
+      color: transparent;
+    }
+ 
     h2 {
       text-transform: lowercase;
       color: $charcoal;

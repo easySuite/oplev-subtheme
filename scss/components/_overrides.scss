@@ -129,7 +129,13 @@ html #page .content-wrapper .content-inner .row:last-child {
   .node-ding-campaign {
     margin-bottom: 20px;
   }
+}
+.page-taxonomy .panel-separator {
+	height: 30px;
+}
 
+.page-taxonomy .pane-all-opening-hours {
+	margin-bottom: 35px;
 }
 
 .html .ding-campaign-grid-wrapper .ding-campaign-grid-item,
@@ -149,6 +155,9 @@ html #page .content-wrapper .content-inner .row:last-child {
   }
 }
 
+.page-taxonomy .pane-all-opening-hours .panel-separator {
+  margin-top: 60px;
+}
 
 .page-taxonomy {
   .pane-page-title {
