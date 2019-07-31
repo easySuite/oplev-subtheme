@@ -218,3 +218,37 @@ html #page .content-wrapper .content-inner .row:last-child {
 .page-arrangementer .views-exposed-form label {
   font-weight: normal;
 }
+
+.page-taxonomy .layout-wrapper {
+  padding-bottom: 25px;
+}
+
+.card-text {
+  max-height: 6em;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  line-height: 1.5em;
+  background: white;
+  word-break: break-all;
+  
+  &::before{
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+    content: '\200C';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 4.8em;
+    width: 25%;
+    height:15px;
+    text-align: center;
+  }
+}
+
+.page-nyheder {
+  .button.btn {
+    background: transparent;
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+}
