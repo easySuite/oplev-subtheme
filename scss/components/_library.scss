@@ -191,3 +191,61 @@
    margin-bottom: 45px;
  }
 }
+
+
+a.opening-hours-toggle.js-opening-hours-toggle.js-expanded,
+a.opening-hours-toggle.js-opening-hours-toggle.collapsed {
+  position: relative;
+  display: inline-block;
+}
+
+.page-libraries .opening-hours-toggle.collapsed:after {
+  color: #262626;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: -30px;
+  background: #50af9c;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;
+}
+.page-libraries .opening-hours-toggle.collapsed:before {
+  content: "\e904";
+  font-family: 'icomoon';
+  font-size: 36px;
+  position: absolute;
+  right: -42px;
+  top: -3px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  transform: rotate(90deg);
+}
+
+.page-libraries .opening-hours-toggle.js-expanded:after {
+  color: #262626;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: -30px;
+  background: #50af9c;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle;   
+}
+
+.page-libraries .opening-hours-toggle.js-expanded:before {
+  content: "\e904";
+  font-family: 'icomoon';
+  font-size: 36px;
+  position: absolute;
+  right: -18px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  transform: rotate(-90deg);
+}

@@ -9308,24 +9308,16 @@ fieldset.collapsible .fieldset-title::after {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 4px; }
-  .opening-hours-table th:first-child:nth-last-child(4),
-  .opening-hours-table th:first-child:nth-last-child(5) ~ th {
-    float: left;
-    width: calc(100% / 5 - 15px); }
   .opening-hours-table thead {
     border: none; }
   .opening-hours-table tbody tr.odd {
     background-color: #e5e5e5; }
-    .opening-hours-table tbody tr.odd td div {
+    .opening-hours-table tbody tr.odd td div span {
       padding-left: 10px; }
-      .opening-hours-table tbody tr.odd td div span {
-        padding-left: 10px; }
   .opening-hours-table tbody tr.even {
     background-color: #f1f2f2; }
-    .opening-hours-table tbody tr.even td div {
+    .opening-hours-table tbody tr.even td div span {
       padding-left: 10px; }
-      .opening-hours-table tbody tr.even td div span {
-        padding-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }
@@ -9440,7 +9432,7 @@ fieldset.collapsible .fieldset-title::after {
         margin-bottom: 0;
         padding: 0;
         display: inline-block;
-        width: 26%; } }
+        width: 24%; } }
   .opening-hours-table td:first-child {
     padding-left: 30px;
     color: #50af9c; }
@@ -9454,6 +9446,17 @@ fieldset.collapsible .fieldset-title::after {
         display: none; } }
   .opening-hours-table td span {
     padding-left: 10px; }
+
+.opening-hours-table th,
+.opening-hours-table tr {
+  border-bottom: none; }
+  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
+    .opening-hours-table th,
+    .opening-hours-table tr {
+      border-bottom: none; } }
+
+.opening-hours-week thead {
+  border-bottom: 3px solid #ccc; }
 
 .default-panel-layout {
   padding-left: 0;
@@ -9580,6 +9583,9 @@ blockquote {
 .field-type-text-long {
   word-break: break-all; }
 
+table td {
+  padding-left: 10px; }
+
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
   height: auto; }
@@ -9606,6 +9612,10 @@ blockquote {
   display: inline-block;
   width: auto;
   vertical-align: text-top; }
+
+.node-type-ding-news .node-ding-news .field-name-field-ding-news-lead {
+  font-weight: bold;
+  margin-bottom: 25px; }
 
 .node-type-ding-news .node-ding-news .ding-news-right .field-type-entityreference {
   width: auto; }
@@ -9815,17 +9825,20 @@ blockquote {
   line-height: 1.5em;
   background: white;
   word-break: break-all; }
+  .card-text .field-name-field-ding-news-lead:before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+    content: '\200C';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 4.8em;
+    width: 25%;
+    height: 15px;
+    text-align: center; }
 
-.card-text .field-name-field-ding-news-lead ::before {
-  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
-  content: '\200C';
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 4.8em;
-  width: 25%;
-  height: 15px;
-  text-align: center; }
+.field-name-field-ding-news-lead {
+  margin-bottom: 25px;
+  font-weight: bold; }
 
 .page-arrangementer #autocomplete {
   border: 1px solid #e5e5e5; }
@@ -11068,6 +11081,59 @@ table#calendar {
 .node-type-ding-event article,
 .node-type-ding-news article {
   margin-bottom: 45px; }
+
+a.opening-hours-toggle.js-opening-hours-toggle.js-expanded,
+a.opening-hours-toggle.js-opening-hours-toggle.collapsed {
+  position: relative;
+  display: inline-block; }
+
+.page-libraries .opening-hours-toggle.collapsed:after {
+  color: #262626;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: -30px;
+  background: #50af9c;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle; }
+
+.page-libraries .opening-hours-toggle.collapsed:before {
+  content: "\e904";
+  font-family: 'icomoon';
+  font-size: 36px;
+  position: absolute;
+  right: -42px;
+  top: -3px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  transform: rotate(90deg); }
+
+.page-libraries .opening-hours-toggle.js-expanded:after {
+  color: #262626;
+  height: 30px;
+  width: 30px;
+  position: relative;
+  right: -30px;
+  background: #50af9c;
+  border-radius: 5px;
+  content: " ";
+  display: inline-block;
+  vertical-align: middle; }
+
+.page-libraries .opening-hours-toggle.js-expanded:before {
+  content: "\e904";
+  font-family: 'icomoon';
+  font-size: 36px;
+  position: absolute;
+  right: -18px;
+  top: 3px;
+  width: 30px;
+  height: 30px;
+  z-index: 1;
+  transform: rotate(-90deg); }
 
 .ding_nodelist.ding_nodelist-carousel .event-day {
   font-family: "SourceSansPro-Bold"; }
