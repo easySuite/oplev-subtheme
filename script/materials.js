@@ -66,6 +66,12 @@ $(window).resize(function() {
   setTimeout(() => {
     parseSliderImages();
   }, 50);
+
+
+  var $input = $('.page-search-node .views-exposed-form input.auto_submit');
+  $input.click(function(event) {
+    $input.attr('value', '');
+  });
 });
 //--------------------------------------------- 
 

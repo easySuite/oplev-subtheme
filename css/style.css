@@ -8738,7 +8738,8 @@ input[type="submit"] {
 
 .node-ding-event .field-name-field-ding-event-lead {
   font-family: "SourceSansProSemibold";
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  margin-top: 10px; }
 
 .ui-datepicker-title {
   width: 100%;
@@ -8826,9 +8827,15 @@ input[type="submit"] {
       .pane-ding-related-content-news-events .view-content .views-row:last-child {
         margin-right: 0; }
 
-.share-buttons a {
-  color: #50af9c;
-  margin-bottom: 10px; }
+.social-share-container {
+  padding-top: 10px; }
+
+.share-buttons {
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px; }
+  .share-buttons a {
+    color: #50af9c;
+    margin-bottom: 10px; }
 
 .bef-checkboxes::after {
   display: block;
@@ -9295,12 +9302,16 @@ fieldset.collapsible .fieldset-title::after {
   @media tablet, screen and (min-width: 1200px), screen and (min-width: 992px) {
     .pane-all-opening-hours .pane-content {
       overflow: hidden;
-      margin-bottom: 25px; } }
+      margin-bottom: 60px; } }
 
 .opening-hours-table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 4px; }
+  .opening-hours-table th:first-child:nth-last-child(4),
+  .opening-hours-table th:first-child:nth-last-child(5) ~ th {
+    float: left;
+    width: calc(100% / 5 - 15px); }
   .opening-hours-table thead {
     border: none; }
   .opening-hours-table tbody tr.odd {
@@ -9561,7 +9572,10 @@ blockquote {
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 40px;
-  margin-inline-end: 40px; }
+  margin-inline-end: 40px;
+  border-left: 5px solid #ccc; }
+  blockquote p {
+    padding-left: 5px; }
 
 .field-type-text-long {
   word-break: break-all; }
