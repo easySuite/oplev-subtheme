@@ -40,40 +40,38 @@
       }
     });
     
+    var $input = $('.page-search-node input#edit-search-api-views-fulltext');
+    $input.click(function(event) {
+      $input.attr('value', '');
+    });
 
-//-------------------------------------------
-function switchImgSliderStyles(imgElement) {
-  var notMobile = ($(window).width() >=  768);
-  imgElement.css({
-    width: imgElement.parent().width() + "px",
-    height: imgElement.parent().height() + "px",
-    background: "url(" + imgElement.attr("src") + ") center center / cover no-repeat",
-    'box-sizing': 'border-box',
-    'padding-left': imgElement.parent().width()
-  });
-}
+    //-------------------------------------------
+    function switchImgSliderStyles(imgElement) {
+    var notMobile = ($(window).width() >=  768);
+    imgElement.css({
+      width: imgElement.parent().width() + "px",
+      height: imgElement.parent().height() + "px",
+      background: "url(" + imgElement.attr("src") + ") center center / cover no-repeat",
+      'box-sizing': 'border-box',
+      'padding-left': imgElement.parent().width()
+    });
+    }
 
-function parseSliderImages() {
-  var sliderImg = $('.ding_nodelist.ding_nodelist-carousel .ding_nodelist-items.slick-slider .slick-list .slick-slide .event-image a img');
-  sliderImg.each(function(i, elem) {
-    var img = $(elem);
-    switchImgSliderStyles(img);
-  });
-}
+    function parseSliderImages() {
+    var sliderImg = $('.ding_nodelist.ding_nodelist-carousel .ding_nodelist-items.slick-slider .slick-list .slick-slide .event-image a img');
+    sliderImg.each(function(i, elem) {
+      var img = $(elem);
+      switchImgSliderStyles(img);
+    });
+    }
 
-parseSliderImages();
-$(window).resize(function() {
-  setTimeout(() => {
     parseSliderImages();
-  }, 50);
-
-
-  var $input = $('.page-search-node .views-exposed-form input.auto_submit');
-  $input.click(function(event) {
-    $input.attr('value', '');
-  });
-});
-//--------------------------------------------- 
+    $(window).resize(function() {
+      setTimeout(() => {
+        parseSliderImages();
+      }, 50);
+    });
+   //--------------------------------------------- 
 
     var $header = $('.secondary-menu-wrapper');
     var $element = $('.secondary-menu li');
