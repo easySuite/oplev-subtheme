@@ -9312,16 +9312,12 @@ fieldset.collapsible .fieldset-title::after {
     border: none; }
   .opening-hours-table tbody tr.odd {
     background-color: #e5e5e5; }
-    .opening-hours-table tbody tr.odd td div {
+    .opening-hours-table tbody tr.odd td div span {
       padding-left: 10px; }
-      .opening-hours-table tbody tr.odd td div span {
-        padding-left: 10px; }
   .opening-hours-table tbody tr.even {
     background-color: #f1f2f2; }
-    .opening-hours-table tbody tr.even td div {
+    .opening-hours-table tbody tr.even td div span {
       padding-left: 10px; }
-      .opening-hours-table tbody tr.even td div span {
-        padding-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }
@@ -9436,7 +9432,7 @@ fieldset.collapsible .fieldset-title::after {
         margin-bottom: 0;
         padding: 0;
         display: inline-block;
-        width: 26%; } }
+        width: 24%; } }
   .opening-hours-table td:first-child {
     padding-left: 30px;
     color: #50af9c; }
