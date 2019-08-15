@@ -8232,10 +8232,86 @@ body .search-overlay--wrapper {
       font-weight: 600;
       top: -15px; }
 
+.page-nyheder .field-name-field-ding-news-lead {
+  font-weight: normal; }
+
+.page-arrangementer .field-type-text-long {
+  word-break: normal; }
+
+.page-arrangementer .field-name-field-ding-news-lead {
+  font-weight: normal; }
+
+.page-arrangementer .card-text {
+  font-weight: normal; }
+
+html .not-front.page-taxonomy-term #page .content-inner {
+  padding-top: 50px; }
+
+.field-name-field-ding-library-body ul li {
+  list-style: initial; }
+
+.field-type-text-long p {
+  overflow-wrap: break-word;
+  word-break: normal; }
+
+.node-ding-page,
+.secondary-content.float-left,
+.secondary-content.button-previous,
+.ding_nodelist-taxonomy .event-list-leaf ~ .item .secondary-content.item-list-image,
+.ding_nodelist-taxonomy .event-list-leaf ~ .item .secondary-content.item-library {
+  margin-top: 30px; }
+
+.node-type-ding-page .panel-pane-inner .container {
+  margin-top: 0; }
+
+.node-type-ding-page .layout-wrapper {
+  padding-top: 13px; }
+
+.field-group-format.group-left {
+  padding-top: 0; }
+
+.pane-menu-title .pane-content h2 {
+  display: none; }
+
+li a.active::after {
+  content: "\e903";
+  float: left;
+  font-family: 'icomoon';
+  font-size: small;
+  padding-right: 5px; }
+
+.sub-menu-wrapper .pane-content ul.menu li,
+.pane-block ul.menu li {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 10px; }
+
+.pane-og-menu-og-single-menu-block .pane-title,
+.page-taxonomy .col4 .pane-block .pane-title {
+  border-bottom: 1px solid rgba(38, 38, 38, 0.2);
+  border-top: none;
+  padding-bottom: 25px;
+  padding-top: 0;
+  margin-bottom: 25px; }
+
+@media screen and (min-width: 1200px), screen and (min-width: 992px) {
+  .col.col-md-4 .ding_nodelist-carousel img, .footer-inner .col-md-4.pane-block .ding_nodelist-carousel img {
+    max-width: 461px;
+    max-height: 340px;
+    height: 340px;
+    width: 461px; } }
+
 .bottom {
-  text-align: center; }
+  text-align: center;
+  position: relative; }
   .bottom .pane-title {
     display: none; }
+
+.page-search img {
+  width: auto;
+  height: auto;
+  top: -10px;
+  position: absolute; }
 
 .action-links li {
   color: #50af9c; }
@@ -9749,36 +9825,25 @@ table td {
 .pane-ding-facetbrowser {
   position: relative;
   margin-bottom: 25px; }
-  .pane-taxonomy-menu .sub-menu-title,
-  .pane-taxonomy-menu .pane-title,
-  .pane-library-list .sub-menu-title,
-  .pane-library-list .pane-title,
-  .pane-og-menu-og-single-menu-block .sub-menu-title,
-  .pane-og-menu-og-single-menu-block .pane-title,
-  .pane-ding-facetbrowser .sub-menu-title,
-  .pane-ding-facetbrowser .pane-title {
-    position: relative;
-    border-top: 1px solid rgba(38, 38, 38, 0.2);
-    padding-top: 25px; }
-    .pane-taxonomy-menu .sub-menu-title:last-child,
-    .pane-taxonomy-menu .pane-title:last-child,
-    .pane-library-list .sub-menu-title:last-child,
-    .pane-library-list .pane-title:last-child,
-    .pane-og-menu-og-single-menu-block .sub-menu-title:last-child,
-    .pane-og-menu-og-single-menu-block .pane-title:last-child,
-    .pane-ding-facetbrowser .sub-menu-title:last-child,
-    .pane-ding-facetbrowser .pane-title:last-child {
-      border-bottom: none;
-      margin-bottom: 0; }
-    .pane-taxonomy-menu .sub-menu-title::after,
-    .pane-taxonomy-menu .pane-title::after,
-    .pane-library-list .sub-menu-title::after,
-    .pane-library-list .pane-title::after,
-    .pane-og-menu-og-single-menu-block .sub-menu-title::after,
-    .pane-og-menu-og-single-menu-block .pane-title::after,
-    .pane-ding-facetbrowser .sub-menu-title::after,
-    .pane-ding-facetbrowser .pane-title::after {
-      display: none; }
+  .pane-taxonomy-menu .sub-menu-title:last-child,
+  .pane-taxonomy-menu .pane-title:last-child,
+  .pane-library-list .sub-menu-title:last-child,
+  .pane-library-list .pane-title:last-child,
+  .pane-og-menu-og-single-menu-block .sub-menu-title:last-child,
+  .pane-og-menu-og-single-menu-block .pane-title:last-child,
+  .pane-ding-facetbrowser .sub-menu-title:last-child,
+  .pane-ding-facetbrowser .pane-title:last-child {
+    border-bottom: none;
+    margin-bottom: 0; }
+  .pane-taxonomy-menu .sub-menu-title::after,
+  .pane-taxonomy-menu .pane-title::after,
+  .pane-library-list .sub-menu-title::after,
+  .pane-library-list .pane-title::after,
+  .pane-og-menu-og-single-menu-block .sub-menu-title::after,
+  .pane-og-menu-og-single-menu-block .pane-title::after,
+  .pane-ding-facetbrowser .sub-menu-title::after,
+  .pane-ding-facetbrowser .pane-title::after {
+    display: none; }
   .pane-taxonomy-menu:first-child .sub-menu-title,
   .pane-library-list:first-child .sub-menu-title,
   .pane-og-menu-og-single-menu-block:first-child .sub-menu-title,
