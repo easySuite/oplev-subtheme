@@ -8287,7 +8287,9 @@ li a.active::after {
   margin-top: 10px; }
 
 .pane-og-menu-og-single-menu-block .pane-title,
-.page-taxonomy .col4 .pane-block .pane-title {
+.pane-menu-block-3.sub-menu-wrapper .pane-title,
+.page-taxonomy .col4 .pane-block .pane-title,
+.sub-menu-wrapper .pane-title {
   border-bottom: 1px solid rgba(38, 38, 38, 0.2);
   border-top: none;
   padding-bottom: 25px;
@@ -9384,16 +9386,24 @@ fieldset.collapsible .fieldset-title::after {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 4px; }
+  .opening-hours-table th:first-child:nth-last-child(4),
+  .opening-hours-table th:first-child:nth-last-child(5) ~ th {
+    float: left;
+    width: calc(100% / 5 - 15px); }
   .opening-hours-table thead {
     border: none; }
   .opening-hours-table tbody tr.odd {
     background-color: #e5e5e5; }
-    .opening-hours-table tbody tr.odd td div span {
+    .opening-hours-table tbody tr.odd td div {
       padding-left: 10px; }
+      .opening-hours-table tbody tr.odd td div span {
+        padding-left: 10px; }
   .opening-hours-table tbody tr.even {
     background-color: #f1f2f2; }
-    .opening-hours-table tbody tr.even td div span {
+    .opening-hours-table tbody tr.even td div {
       padding-left: 10px; }
+      .opening-hours-table tbody tr.even td div span {
+        padding-left: 10px; }
 
 .page-libraries .node-ding-library.node-teaser .field-name-field-ding-library-fax-number {
   display: none; }
@@ -9508,7 +9518,7 @@ fieldset.collapsible .fieldset-title::after {
         margin-bottom: 0;
         padding: 0;
         display: inline-block;
-        width: 24%; } }
+        width: 26%; } }
   .opening-hours-table td:first-child {
     padding-left: 30px;
     color: #50af9c; }
@@ -9522,17 +9532,6 @@ fieldset.collapsible .fieldset-title::after {
         display: none; } }
   .opening-hours-table td span {
     padding-left: 10px; }
-
-.opening-hours-table th,
-.opening-hours-table tr {
-  border-bottom: none; }
-  @media screen and (min-width: 767px), screen and (min-width: 1200px), screen and (min-width: 992px) {
-    .opening-hours-table th,
-    .opening-hours-table tr {
-      border-bottom: none; } }
-
-.opening-hours-week thead {
-  border-bottom: 3px solid #ccc; }
 
 .default-panel-layout {
   padding-left: 0;
@@ -9659,9 +9658,6 @@ blockquote {
 .field-type-text-long {
   word-break: break-all; }
 
-table td {
-  padding-left: 10px; }
-
 .node-type-ding-news .node-ding-news img {
   max-width: 100%;
   height: auto; }
@@ -9688,10 +9684,6 @@ table td {
   display: inline-block;
   width: auto;
   vertical-align: text-top; }
-
-.node-type-ding-news .node-ding-news .field-name-field-ding-news-lead {
-  font-weight: bold;
-  margin-bottom: 25px; }
 
 .node-type-ding-news .node-ding-news .ding-news-right .field-type-entityreference {
   width: auto; }
@@ -9890,20 +9882,17 @@ table td {
   line-height: 1.5em;
   background: white;
   word-break: break-all; }
-  .card-text .field-name-field-ding-news-lead:before {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
-    content: '\200C';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 4.8em;
-    width: 25%;
-    height: 15px;
-    text-align: center; }
 
-.field-name-field-ding-news-lead {
-  margin-bottom: 25px;
-  font-weight: bold; }
+.card-text .field-name-field-ding-news-lead ::before {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 50%);
+  content: '\200C';
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 4.8em;
+  width: 25%;
+  height: 15px;
+  text-align: center; }
 
 .page-arrangementer #autocomplete {
   border: 1px solid #e5e5e5; }
