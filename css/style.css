@@ -7874,10 +7874,6 @@ table td {
 html body .search-overlay--wrapper .icon-spinner::after {
   animation-direction: reverse; }
 
-body {
-  background-color: blue;
-  color: red; }
-
 .select-wrapper::after,
 fieldset.collapsible .fieldset-title::after,
 input[type=checkbox]:checked + label::after, .panel-pane ul.sub-menu li a.active::after, .panel-pane .select-list ul.list-items li .list-item.active::after {
