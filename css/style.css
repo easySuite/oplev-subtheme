@@ -11647,7 +11647,7 @@ a.opening-hours-toggle.js-opening-hours-toggle.collapsed {
     @media screen and (min-width: 992px) {
       #page .site-header .navigation-wrapper {
         padding: 13px;
-        top: 0; } }
+        top: 51px; } }
     #page .site-header .navigation-wrapper .navigation-inner {
       background-color: #e8e6e7;
       max-width: 1237px;
